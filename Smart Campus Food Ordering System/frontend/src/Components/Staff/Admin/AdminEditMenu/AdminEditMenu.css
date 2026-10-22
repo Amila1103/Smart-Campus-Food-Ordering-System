@@ -1,0 +1,511 @@
+.admem-wrapper {
+  width: 100%;
+  margin-top: 30px;
+  padding: 32px;
+  background: linear-gradient(180deg, #f7faf7 0%, #f2f6f2 100%);
+  border-radius: 30px;
+  border: 1px solid rgba(46, 125, 50, 0.1);
+  box-shadow: 0 20px 50px rgba(20, 20, 20, 0.08);
+}
+
+.admem-top {
+  margin-bottom: 26px;
+  padding: 26px 28px;
+  background: linear-gradient(180deg, #ffffff 0%, #fbfdfb 100%);
+  border: 1px solid rgba(46, 125, 50, 0.1);
+  border-radius: 24px;
+  box-shadow: 0 12px 28px rgba(34, 34, 34, 0.05);
+}
+
+.admem-badge {
+  display: inline-block;
+  padding: 7px 14px;
+  border-radius: 999px;
+  background: rgba(255, 152, 0, 0.12);
+  color: #ff9800;
+  font-size: 11px;
+  font-weight: 800;
+  margin-bottom: 12px;
+  letter-spacing: 0.35px;
+}
+
+.admem-top h2 {
+  margin: 0 0 10px;
+  color: #1f1f1f;
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.admem-top p {
+  margin: 0;
+  color: #667066;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.admem-empty-box,
+.admem-message {
+  padding: 18px 20px;
+  border-radius: 18px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.admem-empty-box {
+  background: linear-gradient(180deg, #ffffff 0%, #f8fbf8 100%);
+  border: 1px dashed rgba(46, 125, 50, 0.2);
+  color: #4c5a4c;
+}
+
+.admem-message {
+  margin-bottom: 18px;
+  background: linear-gradient(135deg, rgba(46, 125, 50, 0.12), #ffffff);
+  border: 1px dashed rgba(46, 125, 50, 0.24);
+  color: #2e7d32;
+}
+
+.admem-form {
+  width: 100%;
+  background: linear-gradient(180deg, #ffffff 0%, #fcfdfc 100%);
+  border: 1px solid rgba(46, 125, 50, 0.1);
+  border-radius: 26px;
+  padding: 28px;
+  box-shadow: 0 12px 30px rgba(34, 34, 34, 0.045);
+}
+
+.admem-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.admem-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.admem-input-group label {
+  font-size: 14px;
+  font-weight: 800;
+  color: #2e7d32;
+  letter-spacing: 0.1px;
+}
+
+.admem-input-group input,
+.admem-input-group select,
+.admem-input-group textarea {
+  width: 100%;
+  border: 1px solid rgba(46, 125, 50, 0.16);
+  background: #ffffff;
+  color: #1f1f1f;
+  border-radius: 16px;
+  padding: 16px 18px;
+  font-size: 14px;
+  min-height: 58px;
+  outline: none;
+  transition: all 0.22s ease;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+.admem-input-group input::placeholder,
+.admem-input-group textarea::placeholder {
+  color: #9aa39a;
+}
+
+.admem-input-group input:focus,
+.admem-input-group select:focus,
+.admem-input-group textarea:focus {
+  border-color: rgba(46, 125, 50, 0.38);
+  box-shadow: 0 0 0 5px rgba(46, 125, 50, 0.08);
+}
+
+.admem-input-group textarea {
+  resize: vertical;
+  min-height: 180px;
+  padding-top: 16px;
+}
+
+.admem-full-width {
+  grid-column: 1 / -1;
+}
+
+.admem-file-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: linear-gradient(135deg, #f9fcf9, #ffffff);
+  border: 1px dashed rgba(255, 152, 0, 0.3);
+  border-radius: 18px;
+  padding: 16px 18px;
+  min-height: 60px;
+  color: #ff9800;
+  transition: all 0.25s ease;
+}
+
+.admem-file-wrap:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(34, 34, 34, 0.05);
+  border-color: rgba(255, 152, 0, 0.42);
+}
+
+.admem-file-wrap input {
+  border: none;
+  padding: 0;
+  background: transparent;
+  min-height: auto;
+  box-shadow: none;
+}
+
+.admem-file-wrap input:focus {
+  box-shadow: none;
+}
+
+.admem-checkbox-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 58px;
+  padding: 16px 18px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, #f8fbf8, #ffffff);
+  border: 1px solid rgba(46, 125, 50, 0.12);
+  color: #1f1f1f;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.24s ease;
+}
+
+.admem-checkbox-label:hover {
+  box-shadow: 0 10px 20px rgba(34, 34, 34, 0.05);
+}
+
+.admem-checkbox-label input {
+  width: auto;
+  min-height: auto;
+  margin: 0;
+  accent-color: #2e7d32;
+}
+
+.admem-option-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.admem-option-btn {
+  border: 1px solid rgba(46, 125, 50, 0.16);
+  background: #f5f8f5;
+  color: #2e7d32;
+  padding: 11px 16px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.24s ease;
+  box-shadow: 0 4px 10px rgba(34, 34, 34, 0.03);
+}
+
+.admem-option-btn:hover {
+  transform: translateY(-2px);
+  border-color: rgba(46, 125, 50, 0.35);
+}
+
+.admem-option-btn.selected {
+  background: #ff9800;
+  color: #ffffff;
+  border-color: #ff9800;
+  box-shadow: 0 10px 20px rgba(255, 152, 0, 0.18);
+}
+
+.admem-red-select {
+  color: #d32f2f;
+  border-color: rgba(211, 47, 47, 0.2);
+}
+
+.admem-red-select:hover {
+  border-color: rgba(211, 47, 47, 0.35);
+}
+
+.admem-red-select.selected {
+  background: #d32f2f;
+  color: #ffffff;
+  border-color: #d32f2f;
+  box-shadow: 0 10px 20px rgba(211, 47, 47, 0.18);
+}
+
+.admem-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 28px;
+  padding-top: 8px;
+}
+
+.admem-submit-btn {
+  border: none;
+  outline: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 14px 24px;
+  border-radius: 16px;
+  font-weight: 800;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  background: linear-gradient(135deg, #ff9800, #fb8c00);
+  color: #ffffff;
+  box-shadow: 0 10px 22px rgba(255, 152, 0, 0.22);
+}
+
+.admem-submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(255, 152, 0, 0.26);
+}
+
+.admem-submit-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+@media (max-width: 992px) {
+  .admem-wrapper {
+    padding: 24px;
+  }
+
+  .admem-form {
+    padding: 22px;
+  }
+
+  .admem-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admem-top h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .admem-wrapper {
+    padding: 16px;
+    border-radius: 20px;
+  }
+
+  .admem-top {
+    padding: 18px;
+    border-radius: 18px;
+  }
+
+  .admem-form {
+    padding: 16px;
+    border-radius: 20px;
+  }
+
+  .admem-top h2 {
+    font-size: 24px;
+  }
+
+  .admem-input-group input,
+  .admem-input-group select,
+  .admem-input-group textarea {
+    min-height: 54px;
+    padding: 14px 15px;
+    font-size: 13px;
+  }
+
+  .admem-submit-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .admem-actions {
+    justify-content: stretch;
+  }
+}
+.admem-section-card {
+  background: linear-gradient(180deg, #ffffff 0%, #fcfdfc 100%);
+  border: 1px solid rgba(46, 125, 50, 0.1);
+  border-radius: 26px;
+  padding: 28px 28px 26px;
+  box-shadow: 0 12px 30px rgba(34, 34, 34, 0.045);
+  transition: all 0.28s ease;
+}
+
+.admem-section-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 36px rgba(34, 34, 34, 0.06);
+}
+
+.admem-section-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 22px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(46, 125, 50, 0.08);
+}
+
+.admem-section-icon {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  border-radius: 14px;
+  background: rgba(46, 125, 50, 0.12);
+  color: #2e7d32;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.admem-section-icon.orange {
+  background: rgba(255, 152, 0, 0.14);
+  color: #ff9800;
+}
+
+.admem-section-icon.green {
+  background: rgba(46, 125, 50, 0.12);
+  color: #2e7d32;
+}
+
+.admem-section-head h3 {
+  margin: 0 0 5px;
+  color: #1f1f1f;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.admem-section-head p {
+  margin: 0;
+  color: #6a726a;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.admem-checkbox-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: linear-gradient(180deg, #f8fbf8, #ffffff);
+  border: 1px solid rgba(46, 125, 50, 0.12);
+  border-radius: 18px;
+  padding: 16px 18px;
+  min-height: 82px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.admem-checkbox-card:hover {
+  box-shadow: 0 10px 22px rgba(34, 34, 34, 0.05);
+}
+
+.admem-checkbox-card input {
+  display: none;
+}
+
+.admem-checkbox-custom {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  border-radius: 12px;
+  background: rgba(46, 125, 50, 0.12);
+  color: #2e7d32;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.admem-checkbox-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.admem-checkbox-text strong {
+  color: #1f1f1f;
+  font-size: 14px;
+}
+
+.admem-checkbox-text small {
+  color: #6a726a;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.admem-file-label {
+  display: block;
+  cursor: pointer;
+}
+
+.admem-file-label input {
+  display: none;
+}
+
+.admem-file-wrap {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: linear-gradient(135deg, #f9fcf9, #ffffff);
+  border: 1px dashed rgba(255, 152, 0, 0.3);
+  border-radius: 18px;
+  padding: 18px;
+  min-height: 90px;
+  color: #ff9800;
+  transition: all 0.25s ease;
+}
+
+.admem-file-wrap:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(34, 34, 34, 0.05);
+  border-color: rgba(255, 152, 0, 0.42);
+}
+
+.admem-file-icon {
+  width: 46px;
+  height: 46px;
+  min-width: 46px;
+  border-radius: 14px;
+  background: rgba(255, 152, 0, 0.12);
+  color: #ff9800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.admem-file-content strong {
+  display: block;
+  color: #1f1f1f;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.admem-file-content span {
+  color: #6a726a;
+  font-size: 12px;
+  word-break: break-word;
+}
+
+.admem-nutrient-btn {
+  background: #f4f8ff;
+  color: #1565c0;
+  border-color: rgba(21, 101, 192, 0.18);
+}
+
+.admem-nutrient-btn:hover {
+  border-color: rgba(21, 101, 192, 0.35);
+}
+
+.admem-nutrient-btn.selected {
+  background: linear-gradient(135deg, #1565c0, #1e88e5);
+  color: #ffffff;
+  border-color: #1565c0;
+  box-shadow: 0 10px 20px rgba(21, 101, 192, 0.18);
+}
