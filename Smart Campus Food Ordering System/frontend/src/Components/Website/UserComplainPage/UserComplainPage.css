@@ -1,0 +1,354 @@
+* {
+  box-sizing: border-box;
+}
+
+.ucp-page-shell {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #ffffff 0%, #f5f5f5 100%);
+  color: #222222;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.ucp-hero-strip {
+  width: 100%;
+  background: linear-gradient(135deg, #2e7d32 0%, #256728 100%);
+  padding: 70px 20px 90px;
+  position: relative;
+  overflow: hidden;
+}
+
+.ucp-hero-strip::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 220px;
+  height: 220px;
+  background: rgba(255, 152, 0, 0.14);
+  border-radius: 50%;
+}
+
+.ucp-hero-strip::after {
+  content: "";
+  position: absolute;
+  bottom: -60px;
+  left: -60px;
+  width: 260px;
+  height: 260px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+}
+
+.ucp-hero-content {
+  max-width: 1150px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.ucp-mini-badge {
+  display: inline-block;
+  background: #ff9800;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  margin-bottom: 16px;
+}
+
+.ucp-main-title {
+  font-size: 42px;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 14px;
+}
+
+.ucp-main-subtitle {
+  max-width: 720px;
+  font-size: 17px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.92);
+  margin: 0;
+}
+
+.ucp-layout-wrap {
+  max-width: 1150px;
+  margin: -45px auto 0;
+  padding: 0 20px 50px;
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 28px;
+  position: relative;
+  z-index: 5;
+}
+
+.ucp-info-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.ucp-info-card {
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 28px 24px;
+  box-shadow: 0 12px 28px rgba(34, 34, 34, 0.08);
+  border: 1px solid #eeeeee;
+}
+
+.ucp-info-card h2 {
+  margin: 0 0 12px;
+  color: #2e7d32;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.ucp-info-card > p {
+  margin: 0 0 22px;
+  color: #555555;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+.ucp-info-points {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.ucp-info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: #f5f5f5;
+  padding: 12px 14px;
+  border-radius: 14px;
+}
+
+.ucp-info-dot {
+  width: 11px;
+  height: 11px;
+  min-width: 11px;
+  margin-top: 6px;
+  border-radius: 50%;
+  background: #ff9800;
+}
+
+.ucp-info-item p {
+  margin: 0;
+  font-size: 14px;
+  color: #333333;
+  line-height: 1.5;
+}
+
+.ucp-highlight-box {
+  background: linear-gradient(135deg, #ff9800 0%, #f57c00 100%);
+  color: #ffffff;
+  border-radius: 22px;
+  padding: 24px;
+  box-shadow: 0 12px 28px rgba(255, 152, 0, 0.22);
+}
+
+.ucp-highlight-box h3 {
+  margin: 0 0 10px;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.ucp-highlight-box p {
+  margin: 0;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+.ucp-form-panel {
+  background: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 14px 35px rgba(34, 34, 34, 0.1);
+  border: 1px solid #ececec;
+  overflow: hidden;
+}
+
+.ucp-complaint-form {
+  width: 100%;
+}
+
+.ucp-form-header {
+  background: #f5f5f5;
+  padding: 28px 30px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.ucp-form-header h2 {
+  margin: 0 0 8px;
+  font-size: 28px;
+  color: #2e7d32;
+  font-weight: 800;
+}
+
+.ucp-form-header p {
+  margin: 0;
+  color: #666666;
+  font-size: 15px;
+}
+
+.ucp-success-message {
+  margin: 24px 30px 0;
+  background: rgba(46, 125, 50, 0.12);
+  color: #2e7d32;
+  border: 1px solid rgba(46, 125, 50, 0.28);
+  padding: 14px 16px;
+  border-radius: 14px;
+  font-weight: 600;
+}
+
+.ucp-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+  padding: 28px 30px;
+}
+
+.ucp-input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.ucp-input-group label {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #222222;
+}
+
+.ucp-input-group input,
+.ucp-input-group select,
+.ucp-input-group textarea {
+  width: 100%;
+  border: 1px solid #d9d9d9;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 14px 15px;
+  font-size: 15px;
+  color: #222222;
+  outline: none;
+  transition: all 0.25s ease;
+}
+
+.ucp-input-group input:focus,
+.ucp-input-group select:focus,
+.ucp-input-group textarea:focus {
+  border-color: #2e7d32;
+  box-shadow: 0 0 0 4px rgba(46, 125, 50, 0.12);
+}
+
+.ucp-input-group textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+.ucp-full-width {
+  grid-column: 1 / -1;
+}
+
+.ucp-file-name {
+  margin-top: 8px;
+  font-size: 13px;
+  color: #ff9800;
+  font-weight: 600;
+}
+
+.ucp-action-row {
+  padding: 0 30px 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ucp-submit-btn {
+  background: linear-gradient(135deg, #2e7d32 0%, #256728 100%);
+  color: #ffffff;
+  border: none;
+  border-radius: 14px;
+  padding: 14px 28px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 10px 22px rgba(46, 125, 50, 0.24);
+}
+
+.ucp-submit-btn:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #256728 0%, #1f5a23 100%);
+}
+
+.ucp-submit-btn:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 992px) {
+  .ucp-layout-wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .ucp-main-title {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ucp-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ucp-full-width {
+    grid-column: auto;
+  }
+
+  .ucp-form-header,
+  .ucp-form-grid,
+  .ucp-action-row {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .ucp-main-title {
+    font-size: 28px;
+  }
+
+  .ucp-main-subtitle {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ucp-hero-strip {
+    padding: 55px 16px 75px;
+  }
+
+  .ucp-layout-wrap {
+    margin-top: -35px;
+    padding: 0 14px 35px;
+  }
+
+  .ucp-info-card,
+  .ucp-highlight-box {
+    padding: 20px;
+  }
+
+  .ucp-submit-btn {
+    width: 100%;
+  }
+
+  .ucp-action-row {
+    justify-content: stretch;
+  }
+}
+.ucp-input-group input:disabled,
+.ucp-input-group select:disabled,
+.ucp-input-group textarea:disabled {
+  background: #f5f5f5;
+  cursor: not-allowed;
+}

@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.uc-navbar {
+  width: 100%;
+  min-height: 82px;
+  padding: 0 34px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(46, 125, 50, 0.14);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Left */
+.uc-navbar-left {
+  display: flex;
+  align-items: center;
+  flex: 0 0 390px;
+}
+
+.uc-logo-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  padding: 6px 16px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, #fcfcfc, #f7f7f7);
+  border: 1px solid rgba(46, 125, 50, 0.08);
+  transition: all 0.3s ease;
+}
+
+.uc-logo-wrap:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(46, 125, 50, 0.08);
+}
+
+.uc-logo {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  background: #ffffff;
+  padding: 3px;
+  border: 2px solid #2E7D32;
+  box-shadow:
+    0 0 0 4px rgba(46, 125, 50, 0.08),
+    0 6px 14px rgba(46, 125, 50, 0.12);
+  transition: all 0.3s ease;
+}
+
+.uc-logo-wrap:hover .uc-logo {
+  transform: scale(1.05);
+}
+
+.uc-brand-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.uc-brand-text h2 {
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 1.1;
+  margin: 0;
+  background: linear-gradient(135deg, #2E7D32, #4caf50, #f59e0b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 0.2px;
+}
+
+.uc-brand-text span {
+  font-size: 11px;
+  color: #555555;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-top: 3px;
+}
+
+/* Center links */
+.uc-nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  gap: 18px;
+  list-style: none;
+}
+
+.uc-nav-links li a {
+  text-decoration: none;
+  color: #222222;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 10px;
+  position: relative;
+  transition: all 0.25s ease;
+}
+
+.uc-nav-links li a:hover {
+  color: #2E7D32;
+  background: rgba(46, 125, 50, 0.05);
+}
+
+.uc-nav-links li a::after {
+  content: "";
+  position: absolute;
+  left: 12px;
+  bottom: 4px;
+  width: 0;
+  height: 2px;
+  background: #FF9800;
+  border-radius: 10px;
+  transition: width 0.25s ease;
+}
+
+.uc-nav-links li a:hover::after {
+  width: calc(100% - 24px);
+}
+
+/* Right */
+.uc-navbar-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 0 0 290px;
+  gap: 12px;
+}
+
+.uc-btn {
+  border: none;
+  outline: none;
+  padding: 10px 24px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.28s ease;
+  font-family: "Poppins", sans-serif;
+}
+
+.uc-login-btn {
+  background: #f9f9f9;
+  color: #2E7D32;
+  border: 2px solid #2E7D32;
+}
+
+.uc-login-btn:hover {
+  background: #2E7D32;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(46, 125, 50, 0.18);
+}
+
+.uc-register-btn {
+  background: linear-gradient(135deg, #f59e0b, #f7b13c);
+  color: #ffffff;
+  box-shadow: 0 6px 14px rgba(255, 152, 0, 0.16);
+}
+
+.uc-register-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(255, 152, 0, 0.22);
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .uc-navbar {
+    padding: 0 20px;
+  }
+
+  .uc-navbar-left {
+    flex: 0 0 auto;
+  }
+
+  .uc-navbar-right {
+    flex: 0 0 auto;
+  }
+
+  .uc-brand-text h2 {
+    font-size: 20px;
+  }
+
+  .uc-nav-links {
+    gap: 10px;
+  }
+
+  .uc-nav-links li a {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+  .uc-btn {
+    padding: 9px 18px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 992px) {
+  .uc-navbar {
+    padding: 16px 18px;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .uc-navbar-left,
+  .uc-navbar-right {
+    flex: unset;
+  }
+
+  .uc-nav-links {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-top: 4px;
+  }
+
+  .uc-navbar-right {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .uc-navbar {
+    padding: 14px 12px;
+  }
+
+  .uc-logo-wrap {
+    padding: 6px 10px;
+    gap: 9px;
+  }
+
+  .uc-logo {
+    width: 44px;
+    height: 44px;
+  }
+
+  .uc-brand-text h2 {
+    font-size: 17px;
+  }
+
+  .uc-brand-text span {
+    font-size: 9px;
+    letter-spacing: 0.6px;
+  }
+
+  .uc-nav-links {
+    gap: 8px;
+  }
+
+  .uc-nav-links li a {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+
+  .uc-btn {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+}

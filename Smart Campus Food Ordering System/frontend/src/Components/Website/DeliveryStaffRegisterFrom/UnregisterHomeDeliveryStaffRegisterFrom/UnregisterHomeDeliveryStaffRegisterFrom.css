@@ -1,0 +1,192 @@
+.jobapp-wrapper {
+  min-height: 100vh;
+  background: #f8fafc;
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.jobapp-card {
+  width: 100%;
+  max-width: 980px;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 32px;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.08);
+  border: 1px solid #ececec;
+}
+
+.jobapp-header {
+  margin-bottom: 24px;
+}
+
+.jobapp-header h1 {
+  margin: 0 0 8px;
+  font-size: 32px;
+  color: #222222;
+  font-weight: 800;
+}
+
+.jobapp-header p {
+  margin: 0;
+  font-size: 14px;
+  color: #666666;
+}
+
+.jobapp-alert {
+  padding: 14px 16px;
+  border-radius: 14px;
+  margin-bottom: 18px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.jobapp-alert.success {
+  background: #e8f5e9;
+  color: #1b5e20;
+  border: 1px solid #a5d6a7;
+}
+
+.jobapp-alert.error {
+  background: #fff3e0;
+  color: #e65100;
+  border: 1px solid #ffcc80;
+}
+
+.jobapp-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.jobapp-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.jobapp-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.jobapp-full {
+  width: 100%;
+}
+
+.jobapp-group label {
+  font-size: 14px;
+  font-weight: 700;
+  color: #333333;
+}
+
+.jobapp-input-wrap,
+.jobapp-file-wrap {
+  position: relative;
+}
+
+.jobapp-icon {
+  position: absolute;
+  left: 14px;
+  top: 16px;
+  color: #2e7d32;
+  font-size: 15px;
+}
+
+.jobapp-input-wrap input,
+.jobapp-group select,
+.jobapp-group textarea,
+.jobapp-file-wrap input {
+  width: 100%;
+  border: 1px solid #dddddd;
+  border-radius: 14px;
+  font-size: 14px;
+  color: #222222;
+  background: #ffffff;
+  outline: none;
+  box-sizing: border-box;
+  transition: 0.25s ease;
+}
+
+.jobapp-input-wrap input,
+.jobapp-group select {
+  height: 50px;
+  padding: 0 14px 0 42px;
+}
+
+.jobapp-group textarea {
+  padding: 14px;
+  resize: vertical;
+  min-height: 120px;
+}
+
+.jobapp-file-wrap input {
+  padding: 14px 14px 14px 42px;
+}
+
+.jobapp-input-wrap input:focus,
+.jobapp-group select:focus,
+.jobapp-group textarea:focus,
+.jobapp-file-wrap input:focus {
+  border-color: #2e7d32;
+  box-shadow: 0 0 0 4px rgba(46, 125, 50, 0.12);
+}
+
+.jobapp-submit-btn {
+  border: none;
+  outline: none;
+  background: linear-gradient(135deg, #2e7d32 0%, #256d2a 100%);
+  color: #ffffff;
+  height: 52px;
+  border-radius: 14px;
+  font-size: 15px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.25s ease;
+  box-shadow: 0 12px 22px rgba(46, 125, 50, 0.18);
+}
+
+.jobapp-submit-btn:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .jobapp-card {
+    padding: 22px;
+  }
+
+  .jobapp-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .jobapp-header h1 {
+    font-size: 26px;
+  }
+}
+.jobapp-group select {
+  height: 50px;
+  padding: 0 14px;
+  appearance: none;
+  cursor: pointer;
+}
+
+.jobapp-group textarea {
+  padding: 14px;
+  resize: vertical;
+  min-height: 120px;
+}
+
+.jobapp-file-wrap input {
+  padding: 14px 14px 14px 42px;
+}
+
+.jobapp-input-wrap input:focus,
+.jobapp-group select:focus,
+.jobapp-group textarea:focus,
+.jobapp-file-wrap input:focus {
+  border-color: #2e7d32;
+  box-shadow: 0 0 0 4px rgba(46, 125, 50, 0.12);
+}
