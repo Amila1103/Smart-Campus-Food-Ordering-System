@@ -1,0 +1,334 @@
+.adminside-sidebar {
+  width: 250px;
+  height: 100vh;
+  min-height: 100vh;
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 100;
+  background: linear-gradient(180deg, #2e7d32 0%, #1f5d24 100%);
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 10px 0 30px rgba(0, 0, 0, 0.14);
+  backdrop-filter: blur(10px);
+  transition:
+    width 0.42s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.35s ease,
+    background 0.35s ease;
+}
+
+.adminside-sidebar.open {
+  width: 250px;
+}
+
+.adminside-sidebar.close {
+  width: 84px;
+}
+
+.adminside-sidebar-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 20px 16px;
+  min-height: 82px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.04);
+  transition: padding 0.35s ease, justify-content 0.35s ease;
+}
+
+.adminside-sidebar-header img {
+  width: 46px;
+  height: 46px;
+  min-width: 46px;
+  object-fit: contain;
+  border-radius: 14px;
+  background: #ffffff;
+  padding: 6px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  transition:
+    transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.35s ease;
+}
+
+.adminside-sidebar:hover .adminside-sidebar-header img {
+  transform: scale(1.04) rotate(-2deg);
+}
+
+.adminside-sidebar-header h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+  transition:
+    opacity 0.3s ease,
+    transform 0.35s ease;
+}
+
+.adminside-sidebar-menu {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+  padding: 14px 10px 16px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.adminside-sidebar-menu::-webkit-scrollbar {
+  width: 6px;
+}
+
+.adminside-sidebar-menu::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.adminside-sidebar-menu::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 20px;
+}
+
+.adminside-sidebar-menu button {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  border: none;
+  outline: none;
+  border-radius: 16px;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.92);
+  cursor: pointer;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 600;
+  overflow: hidden;
+  transform: translateX(0) scale(1);
+  transition:
+    background 0.32s ease,
+    color 0.28s ease,
+    transform 0.32s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.32s ease;
+}
+
+.adminside-sidebar-menu button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  bottom: 10px;
+  width: 4px;
+  border-radius: 12px;
+  background: transparent;
+  transform: scaleY(0.3);
+  opacity: 0;
+  transition:
+    opacity 0.28s ease,
+    transform 0.32s cubic-bezier(0.22, 1, 0.36, 1),
+    background 0.28s ease;
+}
+
+.adminside-sidebar-menu button::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.02)
+  );
+  opacity: 0;
+  transition: opacity 0.28s ease;
+  pointer-events: none;
+}
+
+.adminside-sidebar-menu button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  transform: translateX(4px) scale(1.01);
+}
+
+.adminside-sidebar-menu button:hover::before {
+  background: rgba(255, 255, 255, 0.55);
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+.adminside-sidebar-menu button:hover::after {
+  opacity: 1;
+}
+
+.adminside-sidebar-menu button.active {
+  background: linear-gradient(135deg, #ff9800, #ffb74d);
+  color: #ffffff;
+  box-shadow: 0 12px 24px rgba(255, 152, 0, 0.28);
+  transform: translateX(2px) scale(1.01);
+}
+
+.adminside-sidebar-menu button.active::before {
+  background: #ffffff;
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+.adminside-menu-icon,
+.adminside-logout-icon {
+  font-size: 18px;
+  min-width: 20px;
+  flex-shrink: 0;
+  color: inherit;
+  transition:
+    transform 0.32s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.28s ease;
+}
+
+.adminside-sidebar-menu button:hover .adminside-menu-icon {
+  transform: scale(1.12) rotate(-6deg);
+}
+
+.adminside-sidebar-menu button.active .adminside-menu-icon {
+  transform: scale(1.08);
+}
+
+.adminside-sidebar.close .adminside-sidebar-header {
+  justify-content: center;
+  padding: 20px 10px;
+}
+
+.adminside-sidebar.close .adminside-sidebar-menu button,
+.adminside-sidebar.close .adminside-logout-btn {
+  justify-content: center;
+  gap: 0;
+  padding: 14px 0;
+}
+
+.adminside-sidebar.close .adminside-sidebar-menu button::before {
+  display: none;
+}
+
+.adminside-show {
+  display: inline-block;
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+  transition:
+    opacity 0.34s ease,
+    transform 0.36s cubic-bezier(0.22, 1, 0.36, 1),
+    width 0.3s ease;
+  white-space: nowrap;
+}
+
+.adminside-hide {
+  display: inline-block;
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+  overflow: hidden;
+  transform: translateX(-12px);
+  transition:
+    opacity 0.22s ease,
+    transform 0.24s ease,
+    width 0.22s ease,
+    visibility 0.22s ease;
+  white-space: nowrap;
+}
+
+.adminside-sidebar-logout {
+  padding: 16px 10px 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.adminside-logout-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 14px 16px;
+  border: none;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transform: translateY(0) scale(1);
+  transition:
+    background 0.32s ease,
+    color 0.28s ease,
+    transform 0.32s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.32s ease;
+}
+
+.adminside-logout-btn:hover {
+  background: linear-gradient(135deg, #ef5350, #e53935);
+  color: #ffffff;
+  transform: translateY(-3px) scale(1.01);
+  box-shadow: 0 12px 24px rgba(229, 57, 53, 0.24);
+}
+
+.adminside-logout-btn:hover .adminside-logout-icon {
+  transform: translateX(2px);
+}
+
+.adminside-logout-btn:active,
+.adminside-sidebar-menu button:active {
+  transform: scale(0.97);
+}
+
+@keyframes adminsideFadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.adminside-sidebar-menu button {
+  animation: adminsideFadeInUp 0.45s ease both;
+}
+
+.adminside-sidebar-menu button:nth-child(1) { animation-delay: 0.03s; }
+.adminside-sidebar-menu button:nth-child(2) { animation-delay: 0.06s; }
+.adminside-sidebar-menu button:nth-child(3) { animation-delay: 0.09s; }
+.adminside-sidebar-menu button:nth-child(4) { animation-delay: 0.12s; }
+.adminside-sidebar-menu button:nth-child(5) { animation-delay: 0.15s; }
+.adminside-sidebar-menu button:nth-child(6) { animation-delay: 0.18s; }
+.adminside-sidebar-menu button:nth-child(7) { animation-delay: 0.21s; }
+.adminside-sidebar-menu button:nth-child(8) { animation-delay: 0.24s; }
+.adminside-sidebar-menu button:nth-child(9) { animation-delay: 0.27s; }
+
+@media (max-width: 992px) {
+  .adminside-sidebar {
+    width: 220px;
+  }
+
+  .adminside-sidebar.open {
+    width: 220px;
+  }
+
+  .adminside-sidebar.close {
+    width: 76px;
+  }
+
+  .adminside-sidebar-header h2 {
+    font-size: 16px;
+  }
+
+  .adminside-sidebar-menu button,
+  .adminside-logout-btn {
+    font-size: 13px;
+  }
+}
