@@ -1,0 +1,254 @@
+.adprof-wrapper {
+  width: 100%;
+  margin-top: 28px;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 28px;
+  border: 1px solid rgba(46, 125, 50, 0.12);
+  box-shadow: 0 10px 30px rgba(34, 34, 34, 0.08);
+}
+
+.adprof-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.adprof-badge {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(255, 152, 0, 0.12);
+  color: #ff9800;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.adprof-topbar h2 {
+  margin: 0 0 8px;
+  color: #222222;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.adprof-topbar p {
+  margin: 0;
+  color: #666666;
+  font-size: 14px;
+}
+
+.adprof-toast {
+  margin-bottom: 18px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  font-weight: 700;
+}
+
+.adprof-toast.success {
+  background: rgba(46, 125, 50, 0.12);
+  color: #2e7d32;
+  border: 1px solid rgba(46, 125, 50, 0.16);
+}
+
+.adprof-toast.error {
+  background: rgba(211, 47, 47, 0.12);
+  color: #d32f2f;
+  border: 1px solid rgba(211, 47, 47, 0.16);
+}
+
+.adprof-info-box {
+  margin-top: 12px;
+  background: #f5f5f5;
+  border: 1px dashed rgba(46, 125, 50, 0.2);
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  color: #444444;
+  font-weight: 600;
+}
+
+.adprof-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.adprof-card {
+  background: #ffffff;
+  border-radius: 22px;
+  border: 1px solid rgba(46, 125, 50, 0.1);
+  box-shadow: 0 12px 24px rgba(34, 34, 34, 0.06);
+  padding: 20px;
+}
+
+.adprof-card-head {
+  margin-bottom: 18px;
+}
+
+.adprof-card-head h3 {
+  margin: 0;
+  color: #222222;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.adprof-card-head h3 svg {
+  color: #ff9800;
+}
+
+.adprof-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.adprof-info-item {
+  background: #f5f5f5;
+  border-radius: 14px;
+  padding: 13px 14px;
+}
+
+.adprof-info-item span {
+  display: block;
+  color: #666666;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.adprof-info-item strong {
+  color: #222222;
+  font-size: 14px;
+  word-break: break-word;
+}
+
+.adprof-inline-icon {
+  margin-right: 4px;
+  vertical-align: middle;
+  color: #ff9800;
+}
+
+.adprof-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.adprof-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.adprof-input-group label {
+  font-size: 14px;
+  font-weight: 700;
+  color: #2e7d32;
+}
+
+.adprof-password-wrap {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(46, 125, 50, 0.12);
+  background: #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.adprof-password-wrap input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 13px 14px;
+  font-size: 14px;
+  color: #222222;
+  background: transparent;
+}
+
+.adprof-eye-btn {
+  border: none;
+  background: transparent;
+  color: #666666;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.adprof-error-text {
+  color: #d32f2f;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.adprof-note-box {
+  background: rgba(255, 152, 0, 0.1);
+  border: 1px dashed rgba(255, 152, 0, 0.25);
+  border-radius: 14px;
+  padding: 14px;
+  color: #8a5a00;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.adprof-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.adprof-submit-btn {
+  border: none;
+  outline: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 12px 18px;
+  border-radius: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.25s ease;
+  background: #2e7d32;
+  color: #ffffff;
+}
+
+.adprof-submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(46, 125, 50, 0.22);
+}
+
+.adprof-submit-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+@media (max-width: 992px) {
+  .adprof-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .adprof-wrapper {
+    padding: 18px;
+  }
+
+  .adprof-topbar h2 {
+    font-size: 22px;
+  }
+
+  .adprof-actions {
+    justify-content: stretch;
+  }
+
+  .adprof-submit-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
