@@ -1,0 +1,447 @@
+.adover-wrapper {
+  width: 100%;
+  margin-top: 28px;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 28px;
+  border: 1px solid rgba(46, 125, 50, 0.12);
+  box-shadow: 0 10px 30px rgba(34, 34, 34, 0.08);
+}
+
+.adover-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.adover-badge {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(255, 152, 0, 0.12);
+  color: #ff9800;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.adover-topbar h2 {
+  margin: 0 0 8px;
+  color: #222222;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.adover-topbar p {
+  margin: 0;
+  color: #666666;
+  font-size: 14px;
+}
+
+.adover-refresh-btn {
+  border: 1px solid rgba(46, 125, 50, 0.14);
+  background: #f5f5f5;
+  color: #2e7d32;
+  outline: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 12px 18px;
+  border-radius: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.adover-refresh-btn:hover {
+  transform: translateY(-2px);
+}
+
+.adover-alert {
+  margin-bottom: 18px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  font-weight: 700;
+}
+
+.adover-alert.error {
+  background: rgba(211, 47, 47, 0.12);
+  color: #d32f2f;
+  border: 1px solid rgba(211, 47, 47, 0.16);
+}
+
+.adover-alert.success {
+  background: rgba(46, 125, 50, 0.12);
+  color: #2e7d32;
+  border: 1px solid rgba(46, 125, 50, 0.16);
+}
+
+.adover-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.adover-stat-card {
+  background: #f5f5f5;
+  border-radius: 20px;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  border: 1px solid rgba(46, 125, 50, 0.08);
+}
+
+.adover-stat-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.adover-stat-icon.green {
+  background: #2e7d32;
+}
+
+.adover-stat-icon.orange {
+  background: #ff9800;
+}
+
+.adover-stat-icon.dark {
+  background: #222222;
+}
+
+.adover-stat-card h3 {
+  margin: 0;
+  font-size: 24px;
+  color: #222222;
+}
+
+.adover-stat-card p {
+  margin: 4px 0 0;
+  color: #666666;
+  font-size: 13px;
+}
+
+.adover-search-card {
+  background: #f5f5f5;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 24px;
+  border: 1px solid rgba(46, 125, 50, 0.08);
+}
+
+.adover-search-head {
+  margin-bottom: 14px;
+}
+
+.adover-search-head h3 {
+  margin: 0 0 6px;
+  color: #222222;
+  font-size: 20px;
+}
+
+.adover-search-head p {
+  margin: 0;
+  color: #666666;
+  font-size: 13px;
+}
+
+.adover-search-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #ffffff;
+  border: 1px solid rgba(46, 125, 50, 0.12);
+  border-radius: 14px;
+  padding: 0 14px;
+  height: 50px;
+}
+
+.adover-search-icon {
+  color: #2e7d32;
+  font-size: 18px;
+}
+
+.adover-search-box input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+  color: #222222;
+}
+
+.adover-state-box {
+  margin-top: 12px;
+  background: #f5f5f5;
+  border: 1px dashed rgba(46, 125, 50, 0.2);
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  color: #444444;
+  font-weight: 600;
+}
+
+.adover-details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.adover-detail-card {
+  background: #ffffff;
+  border-radius: 22px;
+  border: 1px solid rgba(46, 125, 50, 0.1);
+  box-shadow: 0 12px 24px rgba(34, 34, 34, 0.06);
+  padding: 20px;
+}
+
+.adover-detail-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.adover-detail-top h3 {
+  margin: 0 0 6px;
+  color: #222222;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.adover-detail-top p {
+  margin: 0;
+  color: #666666;
+  font-size: 14px;
+}
+
+.adover-role-pill {
+  padding: 8px 12px;
+  border-radius: 999px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.adover-role-pill.admin {
+  background: #222222;
+}
+
+.adover-role-pill.vendor {
+  background: #ff9800;
+}
+
+.adover-role-pill.delivery {
+  background: #2e7d32;
+}
+
+.adover-role-pill.customer-manager {
+  background: #7b1fa2;
+}
+
+.adover-role-pill.delivery-manager {
+  background: #1565c0;
+}
+
+.adover-role-pill.default {
+  background: #666666;
+}
+
+.adover-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.adover-info-item {
+  background: #f5f5f5;
+  border-radius: 14px;
+  padding: 12px;
+}
+
+.adover-full-width {
+  grid-column: 1 / -1;
+}
+
+.adover-info-item span {
+  display: block;
+  font-size: 12px;
+  color: #666666;
+  margin-bottom: 4px;
+}
+
+.adover-info-item strong {
+  color: #222222;
+  font-size: 14px;
+  word-break: break-word;
+}
+
+.adover-inline-icon {
+  margin-right: 4px;
+  vertical-align: middle;
+  color: #ff9800;
+}
+
+.adover-online {
+  color: #2e7d32;
+}
+
+.adover-offline {
+  color: #d32f2f;
+}
+
+@media (max-width: 1100px) {
+  .adover-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .adover-details-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .adover-wrapper {
+    padding: 18px;
+  }
+
+  .adover-topbar,
+  .adover-detail-top {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .adover-topbar h2 {
+    font-size: 22px;
+  }
+
+  .adover-stats-grid,
+  .adover-info-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.adover-summary-card {
+  background: #ffffff;
+  border: 1px solid #e9ecef;
+  border-radius: 24px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.05);
+}
+
+.adover-summary-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.adover-summary-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(255, 152, 0, 0.12);
+  color: #ff9800;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.adover-summary-head h3 {
+  margin: 0 0 8px;
+  font-size: 24px;
+  color: #222222;
+}
+
+.adover-summary-head p {
+  margin: 0;
+  color: #666666;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.adover-pdf-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 18px;
+  border-radius: 14px;
+  background: #ff9800;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  transition: 0.25s ease;
+}
+
+.adover-pdf-btn:hover {
+  transform: translateY(-2px);
+}
+
+.adover-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.adover-summary-item-card {
+  background: #f5f5f5;
+  border: 1px solid #ebebeb;
+  border-radius: 18px;
+  padding: 18px;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.adover-summary-icon {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  border-radius: 14px;
+  background: rgba(46, 125, 50, 0.12);
+  color: #2e7d32;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.adover-summary-item-card h4 {
+  margin: 0 0 8px;
+  font-size: 17px;
+  color: #222222;
+}
+
+.adover-summary-item-card p {
+  margin: 0;
+  color: #5f5f5f;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+@media (max-width: 992px) {
+  .adover-summary-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.adover-pdf-btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
