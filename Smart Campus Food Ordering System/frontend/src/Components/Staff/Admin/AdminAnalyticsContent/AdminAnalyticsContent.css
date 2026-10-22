@@ -1,0 +1,498 @@
+.adanalytics-wrapper {
+  width: 100%;
+  margin-top: 28px;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 28px;
+  border: 1px solid rgba(46, 125, 50, 0.12);
+  box-shadow: 0 10px 30px rgba(34, 34, 34, 0.08);
+}
+
+.adanalytics-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.adanalytics-badge {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(255, 152, 0, 0.12);
+  color: #ff9800;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.adanalytics-topbar h2 {
+  margin: 0 0 8px;
+  color: #222222;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.adanalytics-topbar p {
+  margin: 0;
+  color: #666666;
+  font-size: 14px;
+}
+
+.adanalytics-refresh-btn {
+  border: 1px solid rgba(46, 125, 50, 0.14);
+  background: #f5f5f5;
+  color: #2e7d32;
+  outline: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 12px 18px;
+  border-radius: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.adanalytics-refresh-btn:hover {
+  transform: translateY(-2px);
+}
+
+.adanalytics-toast {
+  margin-bottom: 18px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  font-weight: 700;
+}
+
+.adanalytics-toast.error {
+  background: rgba(211, 47, 47, 0.12);
+  color: #d32f2f;
+  border: 1px solid rgba(211, 47, 47, 0.18);
+}
+
+.adanalytics-toast.warning {
+  background: rgba(255, 152, 0, 0.12);
+  color: #ff9800;
+  border: 1px solid rgba(255, 152, 0, 0.18);
+}
+
+.adanalytics-info-box {
+  margin-top: 12px;
+  background: #f5f5f5;
+  border: 1px dashed rgba(46, 125, 50, 0.2);
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  color: #444444;
+  font-weight: 600;
+}
+
+.adanalytics-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.adanalytics-stat-card {
+  background: #f5f5f5;
+  border-radius: 20px;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  border: 1px solid rgba(46, 125, 50, 0.08);
+}
+
+.adanalytics-stat-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.adanalytics-stat-icon.green {
+  background: #2e7d32;
+}
+
+.adanalytics-stat-icon.orange {
+  background: #ff9800;
+}
+
+.adanalytics-stat-icon.yellow {
+  background: #f4b400;
+}
+
+.adanalytics-stat-card p {
+  margin: 0 0 4px;
+  color: #666666;
+  font-size: 13px;
+}
+
+.adanalytics-stat-card h3 {
+  margin: 0;
+  color: #222222;
+  font-size: 22px;
+}
+
+.adanalytics-chart-hero {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 22px;
+  margin-bottom: 22px;
+}
+
+.adanalytics-donut-card,
+.adanalytics-summary-card,
+.adanalytics-panel-card {
+  background: #ffffff;
+  border-radius: 22px;
+  border: 1px solid rgba(46, 125, 50, 0.1);
+  box-shadow: 0 12px 24px rgba(34, 34, 34, 0.06);
+  padding: 20px;
+}
+
+.adanalytics-donut-layout {
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  gap: 24px;
+  align-items: center;
+}
+
+.adanalytics-donut-3d-wrap {
+  position: relative;
+  width: 210px;
+  height: 228px;
+  margin: 0 auto;
+}
+
+.adanalytics-donut-3d-shadow {
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: -2px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(34, 34, 34, 0.14);
+  filter: blur(10px);
+}
+
+.adanalytics-donut-chart {
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.adanalytics-donut-depth {
+  top: 12px;
+  filter: brightness(0.78);
+}
+
+.adanalytics-donut-top {
+  top: 0;
+  box-shadow: 0 12px 24px rgba(34, 34, 34, 0.08);
+}
+
+.adanalytics-donut-depth::before,
+.adanalytics-donut-top::before {
+  content: "";
+  position: absolute;
+  width: 118px;
+  height: 118px;
+  border-radius: 50%;
+  background: #ffffff;
+}
+
+.adanalytics-donut-center {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.adanalytics-donut-center strong {
+  display: block;
+  font-size: 28px;
+  color: #222222;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+
+.adanalytics-donut-center span {
+  color: #666666;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.adanalytics-donut-gloss {
+  position: absolute;
+  top: 22px;
+  left: 30px;
+  width: 110px;
+  height: 62px;
+  border-radius: 50%;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.32),
+    rgba(255, 255, 255, 0.04)
+  );
+  transform: rotate(-18deg);
+  z-index: 3;
+  pointer-events: none;
+}
+
+.adanalytics-donut-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.adanalytics-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #f5f5f5;
+  border-radius: 14px;
+  padding: 12px 14px;
+}
+
+.adanalytics-legend-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.adanalytics-dot-1 {
+  background: #2e7d32;
+}
+
+.adanalytics-dot-2 {
+  background: #ff9800;
+}
+
+.adanalytics-dot-3 {
+  background: #66bb6a;
+}
+
+.adanalytics-dot-4 {
+  background: #ffb74d;
+}
+
+.adanalytics-legend-text {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+}
+
+.adanalytics-legend-text strong {
+  color: #222222;
+  font-size: 14px;
+}
+
+.adanalytics-legend-text span {
+  color: #2e7d32;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.adanalytics-panel-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+  margin-bottom: 22px;
+}
+
+.adanalytics-bottom-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 22px;
+}
+
+.adanalytics-panel-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+}
+
+.adanalytics-panel-head h3 {
+  margin: 0;
+  color: #222222;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.adanalytics-panel-head h3 svg {
+  color: #ff9800;
+}
+
+.adanalytics-panel-head span {
+  color: #666666;
+  font-size: 13px;
+}
+
+.adanalytics-bar-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.adanalytics-bar-row {
+  display: grid;
+  grid-template-columns: 140px 1fr 48px;
+  gap: 12px;
+  align-items: center;
+}
+
+.adanalytics-bar-label-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.adanalytics-bar-label {
+  color: #222222;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.adanalytics-bar-track {
+  width: 100%;
+  height: 14px;
+  background: #f5f5f5;
+  border-radius: 999px;
+  overflow: hidden;
+  border: 1px solid rgba(46, 125, 50, 0.08);
+}
+
+.adanalytics-bar-fill {
+  height: 100%;
+  border-radius: 999px;
+}
+
+.adanalytics-bar-fill.green-fill {
+  background: linear-gradient(90deg, #2e7d32, #43a047);
+}
+
+.adanalytics-bar-fill.orange-fill {
+  background: linear-gradient(90deg, #ff9800, #ffb74d);
+}
+
+.adanalytics-bar-value {
+  text-align: right;
+  color: #2e7d32;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.adanalytics-summary-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.adanalytics-summary-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  background: #f5f5f5;
+  border-radius: 14px;
+  padding: 13px 14px;
+}
+
+.adanalytics-summary-item span {
+  color: #666666;
+  font-size: 14px;
+}
+
+.adanalytics-summary-item strong {
+  color: #222222;
+  font-size: 14px;
+}
+
+.adanalytics-empty-text {
+  margin: 0;
+  color: #888888;
+  font-size: 14px;
+}
+
+@media (max-width: 1100px) {
+  .adanalytics-stats-grid,
+  .adanalytics-panel-grid,
+  .adanalytics-chart-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .adanalytics-bottom-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .adanalytics-wrapper {
+    padding: 18px;
+  }
+
+  .adanalytics-topbar,
+  .adanalytics-panel-head,
+  .adanalytics-summary-item {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .adanalytics-topbar h2 {
+    font-size: 22px;
+  }
+
+  .adanalytics-bar-row {
+    grid-template-columns: 1fr;
+  }
+
+  .adanalytics-bar-value {
+    text-align: left;
+  }
+
+  .adanalytics-donut-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .adanalytics-donut-3d-wrap {
+    width: 180px;
+    height: 198px;
+  }
+
+  .adanalytics-donut-chart {
+    width: 180px;
+    height: 180px;
+  }
+
+  .adanalytics-donut-depth::before,
+  .adanalytics-donut-top::before {
+    width: 100px;
+    height: 100px;
+  }
+
+  .adanalytics-donut-gloss {
+    width: 90px;
+    height: 52px;
+    left: 24px;
+  }
+}
