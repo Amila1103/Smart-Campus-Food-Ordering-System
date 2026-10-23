@@ -1,0 +1,455 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+.deltaken-wrapper {
+  min-height: 100vh;
+  padding: 24px;
+  background: #ffffff;
+  color: #222222;
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+}
+
+.deltaken-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 22px;
+  flex-wrap: wrap;
+}
+
+.deltaken-back-btn {
+  height: 46px;
+  border: none;
+  border-radius: 14px;
+  background: #2e7d32;
+  color: #ffffff;
+  padding: 0 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.25s ease;
+  box-shadow: 0 10px 20px rgba(46, 125, 50, 0.18);
+}
+
+.deltaken-back-btn:hover {
+  background: #ff9800;
+  transform: translateY(-2px);
+}
+
+.deltaken-badge {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: rgba(255, 152, 0, 0.15);
+  color: #ff9800;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.deltaken-hero-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  background: linear-gradient(135deg, #ffffff 0%, #f5f5f5 100%);
+  border: 1px solid #ececec;
+  border-radius: 24px;
+  padding: 24px;
+  margin-bottom: 22px;
+  box-shadow: 0 12px 28px rgba(34, 34, 34, 0.05);
+}
+
+.deltaken-hero-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.deltaken-hero-icon {
+  width: 74px;
+  height: 74px;
+  border-radius: 22px;
+  background: #2e7d32;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  box-shadow: 0 12px 24px rgba(46, 125, 50, 0.2);
+}
+
+.deltaken-hero-card h1 {
+  margin: 0 0 8px 0;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.deltaken-hero-card p {
+  margin: 0;
+  color: #666666;
+  font-size: 14px;
+}
+
+.deltaken-status-wrap {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.deltaken-type-badge,
+.deltaken-status-badge {
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.deltaken-type-badge {
+  background: rgba(46, 125, 50, 0.14);
+  color: #2e7d32;
+}
+
+.deltaken-status-badge {
+  background: rgba(255, 152, 0, 0.15);
+  color: #ff9800;
+}
+
+.deltaken-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  margin-bottom: 22px;
+}
+
+.deltaken-summary-card {
+  background: #ffffff;
+  border: 1px solid #ececec;
+  border-radius: 20px;
+  padding: 18px;
+  box-shadow: 0 10px 24px rgba(34, 34, 34, 0.05);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.deltaken-summary-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.deltaken-summary-icon.green {
+  background: #2e7d32;
+}
+
+.deltaken-summary-icon.orange {
+  background: #ff9800;
+}
+
+.deltaken-summary-card h3 {
+  margin: 0 0 4px 0;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.deltaken-summary-card p {
+  margin: 0;
+  color: #666666;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.deltaken-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+  margin-bottom: 22px;
+}
+
+.deltaken-block {
+  background: #f5f5f5;
+  border: 1px solid #ececec;
+  border-radius: 20px;
+  padding: 18px;
+}
+
+.deltaken-block h3 {
+  margin: 0 0 12px 0;
+  font-size: 18px;
+  font-weight: 800;
+  color: #2e7d32;
+}
+
+.deltaken-block p {
+  margin: 8px 0;
+  font-size: 14px;
+  color: #333333;
+  line-height: 1.5;
+}
+
+.deltaken-inline-icon {
+  margin-right: 8px;
+  color: #ff9800;
+}
+
+.deltaken-grand-total {
+  color: #2e7d32 !important;
+  font-weight: 800;
+}
+
+.deltaken-items-card {
+  background: #ffffff;
+  border: 1px solid #ececec;
+  border-radius: 24px;
+  padding: 22px;
+  box-shadow: 0 10px 24px rgba(34, 34, 34, 0.05);
+}
+
+.deltaken-items-card h3 {
+  margin: 0 0 16px 0;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.deltaken-empty-items {
+  background: #f5f5f5;
+  border-radius: 14px;
+  padding: 14px;
+  color: #666666;
+  font-weight: 600;
+}
+
+.deltaken-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid #ececec;
+  border-radius: 18px;
+}
+
+.deltaken-items-table {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+  background: #ffffff;
+}
+
+.deltaken-items-table thead {
+  background: #2e7d32;
+}
+
+.deltaken-items-table thead th {
+  color: #ffffff;
+  text-align: left;
+  padding: 14px 16px;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.deltaken-items-table tbody tr:nth-child(even) {
+  background: #f5f5f5;
+}
+
+.deltaken-items-table tbody td {
+  padding: 14px 16px;
+  border-top: 1px solid #ededed;
+  font-size: 14px;
+  font-weight: 600;
+  color: #222222;
+}
+
+.deltaken-empty-card {
+  max-width: 700px;
+  margin: 80px auto;
+  background: #ffffff;
+  border: 1px solid #ececec;
+  border-radius: 24px;
+  padding: 32px;
+  text-align: center;
+  box-shadow: 0 12px 28px rgba(34, 34, 34, 0.05);
+}
+
+.deltaken-empty-card h2 {
+  margin: 0 0 10px 0;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.deltaken-empty-card p {
+  margin: 0 0 18px 0;
+  color: #666666;
+}
+
+@media (max-width: 768px) {
+  .deltaken-wrapper {
+    padding: 16px;
+  }
+
+  .deltaken-hero-card,
+  .deltaken-items-card,
+  .deltaken-empty-card {
+    padding: 18px;
+  }
+
+  .deltaken-hero-card h1 {
+    font-size: 24px;
+  }
+}
+
+.deltaken-map-card {
+  background: #ffffff;
+  border: 1px solid #ececec;
+  border-radius: 24px;
+  padding: 22px;
+  box-shadow: 0 10px 24px rgba(34, 34, 34, 0.05);
+  margin-bottom: 22px;
+}
+
+.deltaken-map-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.deltaken-map-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.deltaken-map-title h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 800;
+  color: #222222;
+}
+
+.deltaken-map-title svg {
+  color: #2e7d32;
+  font-size: 20px;
+}
+
+.deltaken-map-btn {
+  height: 44px;
+  border: none;
+  border-radius: 14px;
+  background: #ff9800;
+  color: #ffffff;
+  padding: 0 16px;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.25s ease;
+  box-shadow: 0 10px 20px rgba(255, 152, 0, 0.18);
+}
+
+.deltaken-map-btn:hover {
+  transform: translateY(-2px);
+  background: #f08f00;
+}
+
+.deltaken-map-btn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.deltaken-route-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.deltaken-route-info p {
+  margin: 0;
+  background: #f5f5f5;
+  border: 1px solid #ececec;
+  border-radius: 16px;
+  padding: 14px;
+  font-size: 14px;
+  color: #333333;
+  line-height: 1.5;
+}
+
+.deltaken-map-frame-wrap {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+  border: 1px solid #ececec;
+}
+
+.deltaken-map-frame {
+  width: 100%;
+  height: 420px;
+  border: 0;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .deltaken-route-info {
+    grid-template-columns: 1fr;
+  }
+
+  .deltaken-map-frame {
+    height: 320px;
+  }
+}
+.deltaken-finish-btn {
+  height: 44px;
+  border: none;
+  border-radius: 14px;
+  background: #2e7d32;
+  color: #ffffff;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.25s ease;
+  box-shadow: 0 10px 20px rgba(46, 125, 50, 0.18);
+}
+
+.deltaken-finish-btn:hover {
+  background: #ff9800;
+  transform: translateY(-2px);
+}
+
+.deltaken-finish-alert {
+  margin-bottom: 18px;
+  padding: 14px 16px;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 700;
+  background: rgba(46, 125, 50, 0.12);
+  color: #2e7d32;
+  border: 1px solid rgba(46, 125, 50, 0.18);
+}
+.deltaken-finish-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 22px;
+}
+.deltaken-finish-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
