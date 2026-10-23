@@ -1,0 +1,478 @@
+:root {
+  --deliverydash-primary-green: #2e7d32;
+  --deliverydash-primary-green-dark: #1f5d24;
+  --deliverydash-secondary-orange: #ff9800;
+  --deliverydash-white: #ffffff;
+  --deliverydash-light-bg: #f5f5f5;
+  --deliverydash-border: #e7e7e7;
+  --deliverydash-text-main: #222222;
+  --deliverydash-text-soft: #666666;
+  --deliverydash-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  --deliverydash-radius-xl: 26px;
+  --deliverydash-radius-lg: 20px;
+  --deliverydash-radius-md: 16px;
+}
+
+.deliverydash-layout-shell {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(180deg, #ffffff 0%, #f5f5f5 100%);
+}
+
+.deliverydash-main-area {
+  flex: 1;
+  min-width: 0;
+  padding: 26px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.deliverydash-content-wrap {
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.deliverydash-topbar-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 22px;
+  flex-wrap: wrap;
+}
+
+.deliverydash-topbar-texts {
+  flex: 1;
+}
+
+.deliverydash-main-title {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--deliverydash-text-main);
+  margin: 0 0 6px;
+  line-height: 1.2;
+}
+
+.deliverydash-main-subtitle {
+  font-size: 14px;
+  color: var(--deliverydash-text-soft);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.deliverydash-profile-round-btn {
+  width: 58px;
+  height: 58px;
+  border: none;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--deliverydash-primary-green);
+  color: #ffffff;
+  font-size: 28px;
+  cursor: pointer;
+  box-shadow: 0 12px 24px rgba(46, 125, 50, 0.22);
+  transition: all 0.3s ease;
+}
+
+.deliverydash-profile-round-btn:hover {
+  background: var(--deliverydash-secondary-orange);
+  transform: translateY(-3px);
+}
+
+.deliverydash-slider-section {
+  margin-bottom: 24px;
+}
+
+.deliverydash-slider-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 28px;
+  min-height: 330px;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  background: #2e7d32;
+  box-shadow: 0 18px 34px rgba(46, 125, 50, 0.18);
+}
+
+.deliverydash-slider-image-side {
+  position: relative;
+  min-height: 100%;
+}
+
+.deliverydash-slider-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.deliverydash-slider-content-side {
+  position: relative;
+  padding: 34px 34px 58px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #2e7d32 0%, #388e3c 58%, #43a047 100%);
+  z-index: 2;
+}
+
+.deliverydash-slider-content-side::before {
+  content: "";
+  position: absolute;
+  top: -90px;
+  right: -70px;
+  width: 240px;
+  height: 240px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+}
+
+.deliverydash-slider-content-side::after {
+  content: "";
+  position: absolute;
+  bottom: -70px;
+  right: 120px;
+  width: 180px;
+  height: 180px;
+  background: rgba(255, 152, 0, 0.08);
+  border-radius: 50%;
+}
+
+.deliverydash-brand-row,
+.deliverydash-slide-badge,
+.deliverydash-slide-title,
+.deliverydash-slide-text,
+.deliverydash-slide-action-row,
+.deliverydash-dots-row {
+  position: relative;
+  z-index: 2;
+}
+
+.deliverydash-brand-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.deliverydash-brand-icon-box {
+  width: 70px;
+  height: 70px;
+  border-radius: 20px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 10px;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.12);
+  flex-shrink: 0;
+}
+
+.deliverydash-brand-logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.deliverydash-brand-text-box h3 {
+  margin: 0 0 4px;
+  font-size: 30px;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.1;
+}
+
+.deliverydash-brand-text-box span {
+  font-size: 15px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.deliverydash-slide-badge {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 9px 16px;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.deliverydash-slide-title {
+  margin: 0 0 14px;
+  max-width: 650px;
+  font-size: 42px;
+  line-height: 1.15;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.deliverydash-slide-text {
+  margin: 0;
+  max-width: 620px;
+  line-height: 1.8;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.deliverydash-slide-action-row {
+  margin-top: 28px;
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.deliverydash-primary-action-btn,
+.deliverydash-secondary-action-btn {
+  height: 48px;
+  padding: 0 22px;
+  border-radius: 16px;
+  border: none;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.deliverydash-primary-action-btn {
+  background: #ff9800;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 12px 24px rgba(255, 152, 0, 0.25);
+}
+
+.deliverydash-primary-action-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 28px rgba(255, 152, 0, 0.28);
+}
+
+.deliverydash-secondary-action-btn {
+  background: #ffffff;
+  color: #2e7d32;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.08);
+}
+
+.deliverydash-secondary-action-btn:hover {
+  transform: translateY(-2px);
+}
+
+.deliverydash-arrow-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 3;
+  transition: all 0.25s ease;
+}
+
+.deliverydash-arrow-btn:hover {
+  background: rgba(255, 255, 255, 0.28);
+}
+
+.deliverydash-arrow-left {
+  left: 14px;
+}
+
+.deliverydash-arrow-right {
+  right: 14px;
+}
+
+.deliverydash-dots-row {
+  position: absolute;
+  left: 34px;
+  bottom: 22px;
+  display: flex;
+  gap: 8px;
+}
+
+.deliverydash-dot-item {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.35);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.deliverydash-dot-item.active {
+  background: #ff9800;
+  transform: scale(1.06);
+}
+
+.deliverydash-stats-grid-box {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(180px, 1fr));
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.deliverydash-stat-card-box {
+  background: var(--deliverydash-white);
+  border: 1px solid var(--deliverydash-border);
+  border-radius: var(--deliverydash-radius-lg);
+  padding: 22px 20px;
+  box-shadow: var(--deliverydash-shadow);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.deliverydash-stat-card-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    var(--deliverydash-primary-green),
+    var(--deliverydash-secondary-orange)
+  );
+}
+
+.deliverydash-stat-card-box:hover {
+  transform: translateY(-4px);
+}
+
+.deliverydash-stat-icon-box {
+  width: 58px;
+  height: 58px;
+  min-width: 58px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.deliverydash-green-tone {
+  background: rgba(46, 125, 50, 0.12);
+  color: var(--deliverydash-primary-green);
+}
+
+.deliverydash-orange-tone {
+  background: rgba(255, 152, 0, 0.14);
+  color: var(--deliverydash-secondary-orange);
+}
+
+.deliverydash-stat-label-text {
+  font-size: 14px;
+  color: var(--deliverydash-text-soft);
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.deliverydash-stat-main-text {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--deliverydash-primary-green);
+  line-height: 1.3;
+  margin: 0;
+}
+
+.deliverydash-panel-main-box {
+  width: 100%;
+  min-height: 420px;
+  background: var(--deliverydash-white);
+  border: 1px solid var(--deliverydash-border);
+  border-radius: var(--deliverydash-radius-xl);
+  padding: 24px;
+  box-shadow: var(--deliverydash-shadow);
+}
+
+.deliverydash-placeholder-box {
+  min-height: 300px;
+  border: 2px dashed rgba(46, 125, 50, 0.18);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 24px;
+  background: linear-gradient(135deg, #ffffff 0%, #f5f5f5 100%);
+  color: var(--deliverydash-primary-green);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+@media (max-width: 1100px) {
+  .deliverydash-stats-grid-box {
+    grid-template-columns: repeat(2, minmax(180px, 1fr));
+  }
+
+  .deliverydash-slider-card {
+    grid-template-columns: 1fr;
+  }
+
+  .deliverydash-slider-image-side {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .deliverydash-main-area {
+    padding: 18px;
+  }
+
+  .deliverydash-main-title {
+    font-size: 26px;
+  }
+
+  .deliverydash-stats-grid-box {
+    grid-template-columns: 1fr;
+  }
+
+  .deliverydash-panel-main-box {
+    padding: 16px;
+  }
+
+  .deliverydash-slider-content-side {
+    padding: 24px 20px 54px;
+  }
+
+  .deliverydash-brand-icon-box {
+    width: 58px;
+    height: 58px;
+    border-radius: 16px;
+    padding: 8px;
+  }
+
+  .deliverydash-brand-text-box h3 {
+    font-size: 22px;
+  }
+
+  .deliverydash-brand-text-box span {
+    font-size: 13px;
+  }
+
+  .deliverydash-slide-title {
+    font-size: 28px;
+  }
+
+  .deliverydash-slide-text {
+    font-size: 14px;
+  }
+
+  .deliverydash-arrow-btn {
+    width: 40px;
+    height: 40px;
+  }
+}
