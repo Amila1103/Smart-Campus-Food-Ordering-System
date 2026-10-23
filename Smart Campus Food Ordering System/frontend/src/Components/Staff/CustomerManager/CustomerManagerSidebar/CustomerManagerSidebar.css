@@ -1,0 +1,346 @@
+.cmdside-sidebar {
+  width: 250px;
+  height: 100vh;
+  min-height: 100vh;
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 100;
+  background: linear-gradient(180deg, #2e7d32 0%, #1f5d24 100%);
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 10px 0 30px rgba(0, 0, 0, 0.14);
+  backdrop-filter: blur(10px);
+  transition:
+    width 0.42s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.35s ease,
+    background 0.35s ease;
+}
+
+.cmdside-sidebar.open {
+  width: 250px;
+}
+
+.cmdside-sidebar.close {
+  width: 84px;
+}
+
+.cmdside-sidebar-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px;
+  height: 82px;
+  min-height: 82px;
+  max-height: 82px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.04);
+  transition: padding 0.35s ease, justify-content 0.35s ease;
+  overflow: hidden;
+}
+
+.cmdside-sidebar-header img {
+  width: 46px;
+  height: 46px;
+  min-width: 46px;
+  object-fit: contain;
+  border-radius: 14px;
+  background: #ffffff;
+  padding: 6px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  transition:
+    transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.35s ease;
+}
+
+.cmdside-sidebar:hover .cmdside-sidebar-header img {
+  transform: scale(1.04) rotate(-2deg);
+}
+
+.cmdside-sidebar-header h2 {
+  flex: 1;
+  min-width: 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.2;
+  transition:
+    opacity 0.3s ease,
+    transform 0.35s ease;
+}
+
+.cmdside-sidebar-menu {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+  padding: 14px 10px 16px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.cmdside-sidebar-menu::-webkit-scrollbar {
+  width: 6px;
+}
+
+.cmdside-sidebar-menu::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.cmdside-sidebar-menu::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 20px;
+}
+
+.cmdside-sidebar-menu button {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  border: none;
+  outline: none;
+  border-radius: 16px;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.92);
+  cursor: pointer;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 600;
+  overflow: hidden;
+  transform: translateX(0) scale(1);
+  transition:
+    background 0.32s ease,
+    color 0.28s ease,
+    transform 0.32s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.32s ease;
+}
+
+.cmdside-sidebar-menu button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  bottom: 10px;
+  width: 4px;
+  border-radius: 12px;
+  background: transparent;
+  transform: scaleY(0.3);
+  opacity: 0;
+  transition:
+    opacity 0.28s ease,
+    transform 0.32s cubic-bezier(0.22, 1, 0.36, 1),
+    background 0.28s ease;
+}
+
+.cmdside-sidebar-menu button::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.02)
+  );
+  opacity: 0;
+  transition: opacity 0.28s ease;
+  pointer-events: none;
+}
+
+.cmdside-sidebar-menu button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  transform: translateX(4px) scale(1.01);
+}
+
+.cmdside-sidebar-menu button:hover::before {
+  background: rgba(255, 255, 255, 0.55);
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+.cmdside-sidebar-menu button:hover::after {
+  opacity: 1;
+}
+
+.cmdside-sidebar-menu button.active {
+  background: linear-gradient(135deg, #ff9800, #ffb74d);
+  color: #ffffff;
+  box-shadow: 0 12px 24px rgba(255, 152, 0, 0.28);
+  transform: translateX(2px) scale(1.01);
+}
+
+.cmdside-sidebar-menu button.active::before {
+  background: #ffffff;
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+.cmdside-menu-icon,
+.cmdside-logout-icon {
+  font-size: 18px;
+  min-width: 20px;
+  flex-shrink: 0;
+  color: inherit;
+  transition:
+    transform 0.32s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.28s ease;
+}
+
+.cmdside-sidebar-menu button:hover .cmdside-menu-icon {
+  transform: scale(1.12) rotate(-6deg);
+}
+
+.cmdside-sidebar-menu button.active .cmdside-menu-icon {
+  transform: scale(1.08);
+}
+
+.cmdside-sidebar.close .cmdside-sidebar-header {
+  justify-content: center;
+  padding: 16px 10px;
+}
+
+.cmdside-sidebar.close .cmdside-sidebar-menu button,
+.cmdside-sidebar.close .cmdside-logout-btn {
+  justify-content: center;
+  gap: 0;
+  padding: 14px 0;
+}
+
+.cmdside-sidebar.close .cmdside-sidebar-menu button::before {
+  display: none;
+}
+
+.cmdside-show {
+  display: inline-block;
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+  transition:
+    opacity 0.34s ease,
+    transform 0.36s cubic-bezier(0.22, 1, 0.36, 1),
+    width 0.3s ease;
+  white-space: nowrap;
+}
+
+.cmdside-hide {
+  display: inline-block;
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+  overflow: hidden;
+  transform: translateX(-12px);
+  transition:
+    opacity 0.22s ease,
+    transform 0.24s ease,
+    width 0.22s ease,
+    visibility 0.22s ease;
+  white-space: nowrap;
+}
+
+.cmdside-sidebar-logout {
+  padding: 16px 10px 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.cmdside-logout-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 14px 16px;
+  border: none;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transform: translateY(0) scale(1);
+  transition:
+    background 0.32s ease,
+    color 0.28s ease,
+    transform 0.32s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.32s ease;
+}
+
+.cmdside-logout-btn:hover {
+  background: linear-gradient(135deg, #ef5350, #e53935);
+  color: #ffffff;
+  transform: translateY(-3px) scale(1.01);
+  box-shadow: 0 12px 24px rgba(229, 57, 53, 0.24);
+}
+
+.cmdside-logout-btn:hover .cmdside-logout-icon {
+  transform: translateX(2px);
+}
+
+.cmdside-logout-btn:active,
+.cmdside-sidebar-menu button:active {
+  transform: scale(0.97);
+}
+
+@keyframes cmdsideFadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cmdside-sidebar-menu button {
+  animation: cmdsideFadeInUp 0.45s ease both;
+}
+
+.cmdside-sidebar-menu button:nth-child(1) { animation-delay: 0.03s; }
+.cmdside-sidebar-menu button:nth-child(2) { animation-delay: 0.06s; }
+.cmdside-sidebar-menu button:nth-child(3) { animation-delay: 0.09s; }
+.cmdside-sidebar-menu button:nth-child(4) { animation-delay: 0.12s; }
+.cmdside-sidebar-menu button:nth-child(5) { animation-delay: 0.15s; }
+.cmdside-sidebar-menu button:nth-child(6) { animation-delay: 0.18s; }
+.cmdside-sidebar-menu button:nth-child(7) { animation-delay: 0.21s; }
+
+@media (max-width: 992px) {
+  .cmdside-sidebar {
+    width: 220px;
+  }
+
+  .cmdside-sidebar.open {
+    width: 220px;
+  }
+
+  .cmdside-sidebar.close {
+    width: 76px;
+  }
+
+  .cmdside-sidebar-header {
+    height: 78px;
+    min-height: 78px;
+    max-height: 78px;
+  }
+
+  .cmdside-sidebar-header h2 {
+    font-size: 14px;
+  }
+
+  .cmdside-sidebar-menu button,
+  .cmdside-logout-btn {
+    font-size: 13px;
+  }
+}
