@@ -1,0 +1,417 @@
+.delover-wrapper {
+  width: 100%;
+  margin-top: 28px;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 28px;
+  border: 1px solid rgba(46, 125, 50, 0.12);
+  box-shadow: 0 10px 30px rgba(34, 34, 34, 0.08);
+}
+
+.delover-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.delover-topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.delover-badge {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(255, 152, 0, 0.12);
+  color: #ff9800;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.delover-topbar h2 {
+  margin: 0 0 8px;
+  color: #222222;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.delover-topbar p {
+  margin: 0;
+  color: #666666;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.delover-refresh-btn,
+.delover-pdf-btn {
+  border: none;
+  outline: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 12px 18px;
+  border-radius: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.delover-refresh-btn {
+  background: #f5f5f5;
+  color: #2e7d32;
+  border: 1px solid rgba(46, 125, 50, 0.14);
+}
+
+.delover-pdf-btn {
+  background: #ff9800;
+  color: #ffffff;
+}
+
+.delover-refresh-btn:hover,
+.delover-pdf-btn:hover {
+  transform: translateY(-2px);
+}
+
+.delover-alert {
+  margin-bottom: 18px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  font-weight: 700;
+}
+
+.delover-alert.error {
+  background: rgba(211, 47, 47, 0.12);
+  color: #d32f2f;
+  border: 1px solid rgba(211, 47, 47, 0.16);
+}
+
+.delover-alert.success {
+  background: rgba(46, 125, 50, 0.12);
+  color: #2e7d32;
+  border: 1px solid rgba(46, 125, 50, 0.16);
+}
+
+.delover-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.delover-stat-card {
+  background: #f5f5f5;
+  border-radius: 20px;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  border: 1px solid rgba(46, 125, 50, 0.08);
+}
+
+.delover-stat-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.delover-stat-icon.green {
+  background: #2e7d32;
+}
+
+.delover-stat-icon.orange {
+  background: #ff9800;
+}
+
+.delover-stat-icon.dark {
+  background: #222222;
+}
+
+.delover-stat-card h3 {
+  margin: 0;
+  font-size: 24px;
+  color: #222222;
+}
+
+.delover-stat-card p {
+  margin: 4px 0 0;
+  color: #666666;
+  font-size: 13px;
+}
+
+.delover-summary-card,
+.delover-latest-card {
+  background: #ffffff;
+  border: 1px solid #e9ecef;
+  border-radius: 24px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.05);
+}
+
+.delover-summary-head,
+.delover-latest-head {
+  margin-bottom: 20px;
+}
+
+.delover-summary-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(255, 152, 0, 0.12);
+  color: #ff9800;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.delover-summary-head h3,
+.delover-latest-head h3 {
+  margin: 0 0 8px;
+  font-size: 24px;
+  color: #222222;
+}
+
+.delover-summary-head p {
+  margin: 0;
+  color: #666666;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.delover-summary-grid,
+.delover-latest-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.delover-summary-item-card,
+.delover-latest-item {
+  background: #f5f5f5;
+  border: 1px solid #ebebeb;
+  border-radius: 18px;
+  padding: 18px;
+}
+
+.delover-summary-item-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.delover-summary-icon {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  border-radius: 14px;
+  background: rgba(46, 125, 50, 0.12);
+  color: #2e7d32;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.delover-summary-item-card h4,
+.delover-latest-item h4 {
+  margin: 0 0 8px;
+  font-size: 17px;
+  color: #222222;
+}
+
+.delover-summary-item-card p,
+.delover-latest-item p {
+  margin: 0;
+  color: #5f5f5f;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.delover-latest-item span {
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: 700;
+  color: #2e7d32;
+}
+
+.delover-search-card {
+  background: #f5f5f5;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 24px;
+  border: 1px solid rgba(46, 125, 50, 0.08);
+}
+
+.delover-search-head {
+  margin-bottom: 14px;
+}
+
+.delover-search-head h3 {
+  margin: 0 0 6px;
+  color: #222222;
+  font-size: 20px;
+}
+
+.delover-search-head p {
+  margin: 0;
+  color: #666666;
+  font-size: 13px;
+}
+
+.delover-search-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #ffffff;
+  border: 1px solid rgba(46, 125, 50, 0.12);
+  border-radius: 14px;
+  padding: 0 14px;
+  height: 50px;
+}
+
+.delover-search-icon {
+  color: #2e7d32;
+  font-size: 18px;
+}
+
+.delover-search-box input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+  color: #222222;
+}
+
+.delover-state-box {
+  margin-top: 12px;
+  background: #f5f5f5;
+  border: 1px dashed rgba(46, 125, 50, 0.2);
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  color: #444444;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.delover-details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+  margin-bottom: 24px;
+}
+
+.delover-detail-card {
+  background: #ffffff;
+  border-radius: 22px;
+  border: 1px solid rgba(46, 125, 50, 0.1);
+  box-shadow: 0 12px 24px rgba(34, 34, 34, 0.06);
+  padding: 20px;
+}
+
+.delover-detail-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.delover-detail-top h3 {
+  margin: 0 0 6px;
+  color: #222222;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.delover-detail-top p {
+  margin: 0;
+  color: #666666;
+  font-size: 14px;
+}
+
+.delover-type-pill {
+  padding: 8px 12px;
+  border-radius: 999px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+  background: #2e7d32;
+}
+
+.delover-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.delover-info-item {
+  background: #f5f5f5;
+  border-radius: 14px;
+  padding: 12px;
+}
+
+.delover-full-width {
+  grid-column: 1 / -1;
+}
+
+.delover-info-item span {
+  display: block;
+  font-size: 12px;
+  color: #666666;
+  margin-bottom: 4px;
+}
+
+.delover-info-item strong {
+  color: #222222;
+  font-size: 14px;
+  word-break: break-word;
+}
+
+@media (max-width: 1100px) {
+  .delover-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .delover-details-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .delover-wrapper {
+    padding: 18px;
+  }
+
+  .delover-topbar,
+  .delover-detail-top {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .delover-topbar h2 {
+    font-size: 22px;
+  }
+
+  .delover-stats-grid,
+  .delover-info-grid,
+  .delover-summary-grid,
+  .delover-latest-grid {
+    grid-template-columns: 1fr;
+  }
+}
