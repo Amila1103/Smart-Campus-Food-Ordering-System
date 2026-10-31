@@ -1,0 +1,384 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+.cot-page {
+  min-height: 100vh;
+  padding: 28px;
+  background: linear-gradient(180deg, #ffffff 0%, #f5f5f5 100%);
+  font-family: "Inter", sans-serif;
+  color: #222222;
+}
+
+.cot-topbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 28px;
+}
+
+.cot-back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  background: #2e7d32;
+  color: #ffffff;
+  padding: 13px 20px;
+  border-radius: 14px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 10px 22px rgba(46, 125, 50, 0.18);
+  transition: 0.25s ease;
+}
+
+.cot-back-btn:hover {
+  background: #256b2a;
+  transform: translateY(-2px);
+}
+
+.cot-topbar-text h1 {
+  margin: 0 0 8px;
+  font-size: 32px;
+  font-weight: 800;
+  color: #222222;
+}
+
+.cot-topbar-text p {
+  margin: 0;
+  font-size: 15px;
+  color: #666666;
+}
+
+.cot-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.cot-stat-card {
+  background: #ffffff;
+  border: 1px solid #ebebeb;
+  border-left: 6px solid #2e7d32;
+  border-radius: 20px;
+  padding: 22px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.05);
+}
+
+.cot-stat-icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(46, 125, 50, 0.12);
+  color: #2e7d32;
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.cot-stat-card h3 {
+  margin: 0 0 6px;
+  font-size: 14px;
+  color: #666666;
+  font-weight: 600;
+}
+
+.cot-stat-card h2 {
+  margin: 0;
+  font-size: 25px;
+  color: #222222;
+  font-weight: 800;
+}
+
+.cot-toolbar {
+  margin-bottom: 24px;
+}
+
+.cot-search {
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 16px;
+  padding: 0 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+}
+
+.cot-search svg {
+  color: #2e7d32;
+  font-size: 18px;
+}
+
+.cot-search input {
+  flex: 1;
+  height: 52px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #222222;
+  font-size: 14px;
+}
+
+.cot-search input::placeholder {
+  color: #888888;
+}
+
+.cot-list {
+  display: grid;
+  gap: 24px;
+}
+
+.cot-empty {
+  background: #ffffff;
+  border: 1px dashed #cccccc;
+  border-radius: 20px;
+  padding: 42px 20px;
+  text-align: center;
+  color: #666666;
+  font-weight: 600;
+}
+
+.cot-card {
+  background: #ffffff;
+  border: 1px solid #ececec;
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.06);
+}
+
+.cot-card-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 14px;
+  align-items: flex-start;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #efefef;
+}
+
+.cot-card-top h3 {
+  margin: 0 0 8px;
+  font-size: 22px;
+  color: #222222;
+  font-weight: 800;
+}
+
+.cot-card-top p {
+  margin: 0;
+  color: #666666;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.cot-status {
+  background: #ff9800;
+  color: #ffffff;
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  box-shadow: 0 8px 18px rgba(255, 152, 0, 0.24);
+}
+
+.cot-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 14px;
+  margin: 22px 0;
+}
+
+.cot-info-box {
+  background: #f5f5f5;
+  border: 1px solid #ebebeb;
+  border-radius: 18px;
+  padding: 16px;
+}
+
+.cot-info-box span {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 12px;
+  color: #777777;
+  font-weight: 600;
+}
+
+.cot-info-box strong {
+  color: #222222;
+  font-size: 15px;
+  font-weight: 700;
+  word-break: break-word;
+}
+
+.cot-items h4 {
+  margin: 0 0 14px;
+  color: #2e7d32;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.cot-item-list {
+  display: grid;
+  gap: 14px;
+}
+
+.cot-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  padding: 16px;
+  background: #ffffff;
+  border: 1px solid #ebebeb;
+  border-radius: 18px;
+}
+
+.cot-item-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+}
+
+.cot-item-image-wrap {
+  width: 74px;
+  height: 74px;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #f5f5f5;
+  border: 1px solid #e1e1e1;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cot-item-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cot-item-noimage {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888888;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  padding: 8px;
+}
+
+.cot-item-details strong {
+  display: block;
+  margin-bottom: 6px;
+  color: #222222;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.cot-item-details p {
+  margin: 4px 0;
+  color: #666666;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.cot-item-meta {
+  color: #2e7d32 !important;
+  font-weight: 700 !important;
+}
+
+.cot-item-price {
+  color: #ff9800;
+  font-size: 15px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.cot-no-items {
+  margin: 0;
+  color: #777777;
+  font-size: 14px;
+}
+
+.cot-card-bottom {
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid #efefef;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.cot-card-bottom span {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 12px;
+  color: #777777;
+  font-weight: 600;
+}
+
+.cot-card-bottom strong {
+  color: #222222;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.cot-complete-btn {
+  border: none;
+  background: linear-gradient(135deg, #ff9800, #f57c00);
+  color: #ffffff;
+  padding: 13px 18px;
+  border-radius: 14px;
+  font-size: 14px;
+  font-weight: 800;
+  cursor: default;
+  box-shadow: 0 10px 22px rgba(255, 152, 0, 0.24);
+}
+
+@media (max-width: 768px) {
+  .cot-page {
+    padding: 18px;
+  }
+
+  .cot-topbar-text h1 {
+    font-size: 26px;
+  }
+
+  .cot-card {
+    padding: 18px;
+  }
+
+  .cot-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cot-card-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cot-complete-btn {
+    width: 100%;
+  }
+}

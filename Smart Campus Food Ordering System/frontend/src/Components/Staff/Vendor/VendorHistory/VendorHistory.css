@@ -1,0 +1,526 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+.venhis-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  padding: 24px;
+  background: #ffffff;
+  font-family: "Inter", sans-serif;
+  color: #222222;
+  box-sizing: border-box;
+}
+
+.venhis-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+  padding: 24px;
+  background: linear-gradient(135deg, #ffffff 0%, #f5f5f5 100%);
+  border: 1px solid #e7e7e7;
+  border-radius: 22px;
+  box-shadow: 0 8px 24px rgba(34, 34, 34, 0.06);
+}
+
+.venhis-header-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.venhis-icon-box {
+  width: 64px;
+  height: 64px;
+  border-radius: 18px;
+  background: #2e7d32;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  box-shadow: 0 10px 20px rgba(46, 125, 50, 0.22);
+}
+
+.venhis-mini-title {
+  margin: 0 0 4px 0;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #ff9800;
+}
+
+.venhis-main-title {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 800;
+  color: #222222;
+}
+
+.venhis-sub-title {
+  margin: 8px 0 0 0;
+  font-size: 14px;
+  color: #555555;
+}
+
+.venhis-refresh-btn {
+  border: none;
+  outline: none;
+  padding: 14px 20px;
+  border-radius: 14px;
+  background: #ff9800;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.25s ease;
+  box-shadow: 0 10px 18px rgba(255, 152, 0, 0.22);
+}
+
+.venhis-refresh-btn:hover {
+  transform: translateY(-2px);
+  background: #f08d00;
+}
+
+.venhis-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.venhis-summary-card {
+  background: #f5f5f5;
+  border: 1px solid #ebebeb;
+  border-radius: 20px;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  box-shadow: 0 8px 20px rgba(34, 34, 34, 0.05);
+}
+
+.venhis-summary-card h3 {
+  margin: 0 0 6px 0;
+  font-size: 22px;
+  font-weight: 800;
+  color: #222222;
+}
+
+.venhis-summary-card p {
+  margin: 0;
+  font-size: 13px;
+  color: #666666;
+  font-weight: 600;
+}
+
+.venhis-summary-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.venhis-summary-icon--green {
+  background: #2e7d32;
+}
+
+.venhis-summary-icon--orange {
+  background: #ff9800;
+}
+
+.venhis-filter-bar {
+  background: #ffffff;
+  border: 1px solid #ececec;
+  border-radius: 20px;
+  padding: 18px;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+  box-shadow: 0 8px 20px rgba(34, 34, 34, 0.04);
+}
+
+.venhis-search-box {
+  flex: 1;
+  min-width: 260px;
+  position: relative;
+}
+
+.venhis-search-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #2e7d32;
+  font-size: 15px;
+}
+
+.venhis-search-box input {
+  width: 100%;
+  height: 48px;
+  border: 1px solid #d9d9d9;
+  border-radius: 14px;
+  padding: 0 16px 0 42px;
+  font-size: 14px;
+  color: #222222;
+  background: #f5f5f5;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.venhis-search-box input:focus {
+  border-color: #2e7d32;
+  background: #ffffff;
+}
+
+.venhis-filter-group {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.venhis-filter-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #f5f5f5;
+  border: 1px solid #e1e1e1;
+  border-radius: 14px;
+  padding: 0 14px;
+  height: 48px;
+  color: #2e7d32;
+}
+
+.venhis-filter-item select {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: #222222;
+  cursor: pointer;
+}
+
+.venhis-message-box,
+.venhis-empty-box {
+  background: #f5f5f5;
+  border: 1px solid #ececec;
+  border-radius: 18px;
+  padding: 18px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #444444;
+  margin-bottom: 20px;
+}
+
+.venhis-message-box--error {
+  background: #fff3f3;
+  border-color: #ffcaca;
+  color: #c62828;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.venhis-card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.venhis-order-card {
+  background: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 24px;
+  padding: 22px;
+  box-shadow: 0 10px 26px rgba(34, 34, 34, 0.05);
+}
+
+.venhis-order-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 18px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #efefef;
+  padding-bottom: 16px;
+  margin-bottom: 18px;
+}
+
+.venhis-order-id {
+  margin: 0 0 8px 0;
+  font-size: 24px;
+  font-weight: 800;
+  color: #222222;
+}
+
+.venhis-order-date {
+  margin: 0;
+  font-size: 13px;
+  color: #666666;
+  font-weight: 600;
+}
+
+.venhis-badge-wrap {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.venhis-badge {
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.venhis-badge--green {
+  background: rgba(46, 125, 50, 0.14);
+  color: #2e7d32;
+}
+
+.venhis-badge--orange {
+  background: rgba(255, 152, 0, 0.15);
+  color: #ff9800;
+}
+
+.venhis-badge--gray {
+  background: #eeeeee;
+  color: #666666;
+}
+
+.venhis-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.venhis-detail-block {
+  background: #f5f5f5;
+  border: 1px solid #ebebeb;
+  border-radius: 18px;
+  padding: 16px;
+}
+
+.venhis-detail-block h4 {
+  margin: 0 0 12px 0;
+  font-size: 16px;
+  font-weight: 800;
+  color: #2e7d32;
+}
+
+.venhis-detail-block p {
+  margin: 8px 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333333;
+}
+
+.venhis-amount-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.venhis-amount-box {
+  background: #ffffff;
+  border: 1px solid #e9e9e9;
+  border-radius: 18px;
+  padding: 16px;
+  box-shadow: inset 0 0 0 1px #f7f7f7;
+}
+
+.venhis-amount-box span {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  color: #666666;
+  margin-bottom: 8px;
+}
+
+.venhis-amount-box strong {
+  font-size: 19px;
+  font-weight: 800;
+  color: #222222;
+}
+
+.venhis-amount-box--highlight {
+  background: linear-gradient(135deg, #2e7d32 0%, #256b2a 100%);
+  border: none;
+}
+
+.venhis-amount-box--highlight span,
+.venhis-amount-box--highlight strong {
+  color: #ffffff;
+}
+
+.venhis-items-section {
+  margin-top: 6px;
+}
+
+.venhis-items-section h4 {
+  margin: 0 0 14px 0;
+  font-size: 17px;
+  font-weight: 800;
+  color: #222222;
+}
+
+.venhis-no-items {
+  margin: 0;
+  padding: 16px;
+  background: #f5f5f5;
+  border-radius: 14px;
+  color: #666666;
+  font-weight: 600;
+}
+
+.venhis-items-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 18px;
+  border: 1px solid #ececec;
+}
+
+.venhis-items-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+  background: #ffffff;
+}
+
+.venhis-items-table thead {
+  background: #2e7d32;
+}
+
+.venhis-items-table thead th {
+  color: #ffffff;
+  text-align: left;
+  padding: 14px 16px;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.venhis-items-table tbody tr:nth-child(even) {
+  background: #f5f5f5;
+}
+
+.venhis-items-table tbody td {
+  padding: 14px 16px;
+  font-size: 14px;
+  color: #222222;
+  border-top: 1px solid #ededed;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .venhis-wrapper {
+    padding: 16px;
+  }
+
+  .venhis-main-title {
+    font-size: 24px;
+  }
+
+  .venhis-header {
+    padding: 18px;
+  }
+
+  .venhis-order-card {
+    padding: 18px;
+  }
+
+  .venhis-order-id {
+    font-size: 20px;
+  }
+
+  .venhis-filter-bar {
+    padding: 14px;
+  }
+
+  .venhis-filter-item,
+  .venhis-search-box input {
+    height: 44px;
+  }
+}
+.venhis-chart-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.venhis-chart-card {
+  background: #ffffff;
+  border: 1px solid #ececec;
+  border-radius: 22px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(34, 34, 34, 0.05);
+}
+
+.venhis-chart-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+
+.venhis-chart-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.venhis-chart-title svg {
+  color: #2e7d32;
+  font-size: 18px;
+}
+
+.venhis-chart-title h3 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 800;
+  color: #222222;
+}
+
+.venhis-chart-subtitle {
+  font-size: 12px;
+  font-weight: 700;
+  color: #777777;
+}
+
+.venhis-pie-wrap {
+  width: 100%;
+  height: 320px;
+}
+
+.venhis-empty-chart-box {
+  background: #f5f5f5;
+  border: 1px dashed #dedede;
+  border-radius: 16px;
+  padding: 18px;
+  text-align: center;
+  color: #666666;
+  font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+  .venhis-chart-grid {
+    grid-template-columns: 1fr;
+  }
+}

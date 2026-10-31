@@ -1,0 +1,472 @@
+.van-wrapper {
+  width: 100%;
+  margin-top: 28px;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 28px;
+  border: 1px solid rgba(46, 125, 50, 0.12);
+  box-shadow: 0 10px 30px rgba(34, 34, 34, 0.08);
+}
+
+.van-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.van-badge {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(46, 125, 50, 0.12);
+  color: #2e7d32;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.van-topbar h2 {
+  margin: 0 0 8px;
+  color: #222222;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.van-topbar p {
+  margin: 0;
+  color: #666666;
+  font-size: 14px;
+}
+
+.van-refresh-btn {
+  border: none;
+  outline: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 12px 18px;
+  border-radius: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.25s ease;
+  background: #f5f5f5;
+  color: #2e7d32;
+  border: 1px solid rgba(46, 125, 50, 0.14);
+}
+
+.van-refresh-btn:hover {
+  transform: translateY(-2px);
+}
+
+.van-toast {
+  margin-bottom: 18px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  font-weight: 700;
+}
+
+.van-toast.success {
+  background: rgba(46, 125, 50, 0.12);
+  color: #2e7d32;
+  border: 1px solid rgba(46, 125, 50, 0.16);
+}
+
+.van-toast.error {
+  background: rgba(211, 47, 47, 0.12);
+  color: #d32f2f;
+  border: 1px solid rgba(211, 47, 47, 0.16);
+}
+
+.van-filter-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 22px;
+}
+
+.van-filter-chip {
+  border: 1px solid rgba(46, 125, 50, 0.16);
+  background: #ffffff;
+  color: #2e7d32;
+  padding: 10px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.van-filter-chip.active {
+  background: #2e7d32;
+  color: #ffffff;
+  border-color: #2e7d32;
+  box-shadow: 0 8px 16px rgba(46, 125, 50, 0.18);
+}
+
+.van-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 22px;
+}
+
+.van-stat-card {
+  background: #f5f5f5;
+  border-radius: 20px;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  border: 1px solid rgba(46, 125, 50, 0.08);
+}
+
+.van-stat-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.van-stat-icon.green {
+  background: #2e7d32;
+}
+
+.van-stat-icon.orange {
+  background: #ff9800;
+}
+
+.van-stat-icon.blue {
+  background: #2563eb;
+}
+
+.van-stat-icon.purple {
+  background: #7c3aed;
+}
+
+.van-stat-card h3 {
+  margin: 0;
+  font-size: 22px;
+  color: #222222;
+}
+
+.van-stat-card p {
+  margin: 4px 0 0;
+  color: #666666;
+  font-size: 13px;
+}
+
+.van-insight-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-bottom: 22px;
+}
+
+.van-insight-card,
+.van-panel-card,
+.van-chart-card {
+  background: #ffffff;
+  border: 1px solid rgba(46, 125, 50, 0.08);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 8px 18px rgba(34, 34, 34, 0.04);
+}
+
+.van-insight-card h4 {
+  margin: 0 0 14px;
+  color: #222222;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.van-breakdown-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(46, 125, 50, 0.08);
+}
+
+.van-breakdown-row:last-child {
+  border-bottom: none;
+}
+
+.van-breakdown-row span {
+  color: #475569;
+}
+
+.van-breakdown-row strong {
+  color: #0f172a;
+}
+
+.van-chart-card {
+  margin-bottom: 22px;
+}
+
+.van-chart-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+
+.van-chart-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.van-chart-title svg {
+  color: #2e7d32;
+  font-size: 20px;
+}
+
+.van-chart-title h3 {
+  margin: 0;
+  color: #222222;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.van-chart-subtitle {
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.van-chart-wrap {
+  min-height: 320px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  padding-top: 12px;
+}
+
+.van-chart-col {
+  flex: 1;
+  min-width: 78px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.van-chart-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.van-chart-value {
+  font-size: 12px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.van-chart-orders {
+  font-size: 11px;
+  font-weight: 600;
+  color: #64748b;
+}
+
+.van-chart-bar-shell {
+  width: 100%;
+  max-width: 64px;
+  height: 220px;
+  background: linear-gradient(180deg, #eef2f7 0%, #e2e8f0 100%);
+  border-radius: 18px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.van-chart-bar {
+  width: 100%;
+  background: linear-gradient(180deg, #22c55e 0%, #15803d 100%);
+  border-radius: 18px;
+  transition: height 0.35s ease;
+}
+
+.van-chart-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: #2e7d32;
+}
+
+.van-bottom-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.van-panel-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.van-panel-head svg {
+  color: #2e7d32;
+  font-size: 18px;
+}
+
+.van-panel-head h3 {
+  margin: 0;
+  font-size: 17px;
+  color: #222222;
+}
+
+.van-list-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.van-list-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(46, 125, 50, 0.08);
+}
+
+.van-list-row:last-child {
+  border-bottom: none;
+}
+
+.van-list-row strong {
+  display: block;
+  color: #222222;
+  margin-bottom: 4px;
+}
+
+.van-list-row span {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.van-list-row b {
+  color: #2e7d32;
+  white-space: nowrap;
+}
+
+.van-empty-text {
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.van-info-box {
+  margin-top: 12px;
+  background: #f5f5f5;
+  border: 1px dashed rgba(46, 125, 50, 0.2);
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  color: #444444;
+  font-weight: 600;
+}
+
+@media (max-width: 1200px) {
+  .van-stats-grid,
+  .van-insight-grid,
+  .van-bottom-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .van-wrapper {
+    padding: 18px;
+  }
+
+  .van-topbar,
+  .van-chart-head {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .van-stats-grid,
+  .van-insight-grid,
+  .van-bottom-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .van-chart-wrap {
+    min-height: 240px;
+    gap: 10px;
+  }
+
+  .van-chart-bar-shell {
+    height: 160px;
+    max-width: 42px;
+  }
+
+  .van-chart-col {
+    min-width: 42px;
+  }
+
+  .van-topbar h2 {
+    font-size: 22px;
+  }
+}
+.van-chart-bar-shell {
+  width: 100%;
+  max-width: 64px;
+  height: 220px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: visible;
+  perspective: 500px;
+}
+
+.van-chart-bar-3d {
+  position: relative;
+  width: 42px;
+  min-height: 18px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.van-chart-bar-front {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #22c55e 0%, #15803d 100%);
+  border-radius: 12px 12px 0 0;
+  box-shadow: 0 10px 18px rgba(21, 128, 61, 0.16);
+}
+
+.van-chart-bar-top {
+  position: absolute;
+  top: -8px;
+  left: 4px;
+  width: 100%;
+  transform: skewX(-45deg);
+  background: linear-gradient(180deg, #86efac 0%, #4ade80 100%);
+  border-radius: 8px 8px 0 0;
+}
+
+.van-chart-bar-side {
+  position: absolute;
+  top: -4px;
+  right: -8px;
+  width: 8px;
+  height: calc(100% + 4px);
+  transform: skewY(-45deg);
+  transform-origin: left bottom;
+  background: linear-gradient(180deg, #166534 0%, #14532d 100%);
+  border-radius: 0 10px 0 0;
+}

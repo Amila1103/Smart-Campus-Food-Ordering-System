@@ -1,0 +1,508 @@
+.vil-wrapper {
+  width: 100%;
+  margin-top: 28px;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 28px;
+  border: 1px solid rgba(46, 125, 50, 0.12);
+  box-shadow: 0 10px 30px rgba(34, 34, 34, 0.08);
+}
+
+.vil-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.vil-topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.vil-badge {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(46, 125, 50, 0.12);
+  color: #2e7d32;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.vil-topbar h2 {
+  margin: 0 0 8px;
+  color: #222222;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.vil-topbar p {
+  margin: 0;
+  color: #666666;
+  font-size: 14px;
+}
+
+.vil-refresh-btn,
+.vil-add-btn,
+.vil-edit-btn,
+.vil-delete-btn,
+.vil-modal-cancel,
+.vil-modal-delete {
+  border: none;
+  outline: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 12px 18px;
+  border-radius: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.vil-refresh-btn {
+  background: #f5f5f5;
+  color: #2e7d32;
+  border: 1px solid rgba(46, 125, 50, 0.14);
+}
+
+.vil-add-btn {
+  background: #2e7d32;
+  color: #ffffff;
+}
+
+.vil-add-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(46, 125, 50, 0.22);
+}
+
+.vil-toast {
+  margin-bottom: 18px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  font-weight: 700;
+}
+
+.vil-toast.success {
+  background: rgba(46, 125, 50, 0.12);
+  color: #2e7d32;
+  border: 1px solid rgba(46, 125, 50, 0.16);
+}
+
+.vil-toast.error {
+  background: rgba(211, 47, 47, 0.12);
+  color: #d32f2f;
+  border: 1px solid rgba(211, 47, 47, 0.16);
+}
+
+.vil-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.vil-stat-card {
+  background: #f5f5f5;
+  border-radius: 20px;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  border: 1px solid rgba(46, 125, 50, 0.08);
+}
+
+.vil-stat-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.vil-stat-icon.green {
+  background: #2e7d32;
+}
+
+.vil-stat-icon.orange {
+  background: #ff9800;
+}
+
+.vil-stat-icon.yellow {
+  background: #f4b400;
+}
+
+.vil-stat-icon.red {
+  background: #d32f2f;
+}
+
+.vil-stat-card h3 {
+  margin: 0;
+  font-size: 24px;
+  color: #222222;
+}
+
+.vil-stat-card p {
+  margin: 4px 0 0;
+  color: #666666;
+  font-size: 13px;
+}
+
+.vil-toolbar {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 22px;
+}
+
+.vil-searchbox {
+  flex: 1;
+  min-width: 260px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #f5f5f5;
+  border: 1px solid rgba(46, 125, 50, 0.12);
+  border-radius: 14px;
+  padding: 0 14px;
+  height: 48px;
+}
+
+.vil-searchbox svg {
+  color: #2e7d32;
+  font-size: 18px;
+}
+
+.vil-searchbox input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+  color: #222222;
+}
+
+.vil-select {
+  min-width: 190px;
+  height: 48px;
+  border-radius: 14px;
+  border: 1px solid rgba(46, 125, 50, 0.12);
+  background: #ffffff;
+  padding: 0 14px;
+  outline: none;
+  font-size: 14px;
+}
+
+.vil-info-box {
+  margin-top: 12px;
+  background: #f5f5f5;
+  border: 1px dashed rgba(46, 125, 50, 0.2);
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  color: #444444;
+  font-weight: 600;
+}
+
+.vil-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.vil-card {
+  background: #ffffff;
+  border-radius: 22px;
+  overflow: hidden;
+  border: 1px solid rgba(46, 125, 50, 0.1);
+  box-shadow: 0 12px 24px rgba(34, 34, 34, 0.06);
+  transition: 0.25s ease;
+}
+
+.vil-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 30px rgba(34, 34, 34, 0.1);
+}
+
+.vil-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 18px 0;
+}
+
+.vil-card-icon-wrap {
+  width: 58px;
+  height: 58px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #e8f5e9, #f5f5f5);
+  color: #2e7d32;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.vil-status {
+  padding: 7px 12px;
+  border-radius: 999px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.vil-status.available {
+  background: #2e7d32;
+}
+
+.vil-status.limited {
+  background: #ff9800;
+}
+
+.vil-status.soldout {
+  background: #d32f2f;
+}
+
+.vil-card-body {
+  padding: 18px;
+}
+
+.vil-card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.vil-card-head h3 {
+  margin: 0 0 4px;
+  font-size: 20px;
+  color: #222222;
+}
+
+.vil-card-head p {
+  margin: 0;
+  font-size: 13px;
+  color: #777777;
+}
+
+.vil-unit-badge {
+  background: rgba(255, 152, 0, 0.12);
+  color: #ff9800;
+  padding: 8px 12px;
+  border-radius: 12px;
+  font-weight: 800;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.vil-description {
+  color: #555555;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  min-height: 45px;
+}
+
+.vil-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.vil-info-item {
+  background: #f5f5f5;
+  border-radius: 14px;
+  padding: 12px;
+}
+
+.vil-info-item span {
+  display: block;
+  font-size: 12px;
+  color: #666666;
+  margin-bottom: 4px;
+}
+
+.vil-info-item strong {
+  color: #222222;
+  font-size: 14px;
+}
+
+.vil-stock-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+  margin-bottom: 8px;
+}
+
+.vil-stock-btn {
+  flex: 1;
+  border: none;
+  outline: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 11px 14px;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.vil-stock-btn.minus {
+  background: rgba(211, 47, 47, 0.12);
+  color: #d32f2f;
+}
+
+.vil-stock-btn.plus {
+  background: rgba(46, 125, 50, 0.12);
+  color: #2e7d32;
+}
+
+.vil-stock-btn:hover {
+  transform: translateY(-1px);
+}
+
+.vil-stock-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.vil-footer {
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(46, 125, 50, 0.08);
+}
+
+.vil-footer-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.vil-edit-btn {
+  background: rgba(255, 152, 0, 0.12);
+  color: #ff9800;
+}
+
+.vil-delete-btn {
+  background: rgba(211, 47, 47, 0.12);
+  color: #d32f2f;
+}
+
+.vil-bottom-note {
+  margin-top: 20px;
+  background: #f5f5f5;
+  border-radius: 16px;
+  padding: 14px 16px;
+  color: #444444;
+  font-size: 14px;
+}
+
+.vil-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(34, 34, 34, 0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  z-index: 999;
+}
+
+.vil-modal-box {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 28px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(34, 34, 34, 0.18);
+}
+
+.vil-modal-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 16px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(211, 47, 47, 0.12);
+  color: #d32f2f;
+  font-size: 26px;
+}
+
+.vil-modal-box h3 {
+  margin: 0 0 10px;
+  color: #222222;
+}
+
+.vil-modal-box p {
+  margin: 0 0 22px;
+  color: #666666;
+  line-height: 1.6;
+}
+
+.vil-modal-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.vil-modal-cancel {
+  background: #f5f5f5;
+  color: #222222;
+}
+
+.vil-modal-delete {
+  background: #d32f2f;
+  color: #ffffff;
+}
+
+@media (max-width: 1200px) {
+  .vil-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .vil-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .vil-wrapper {
+    padding: 18px;
+  }
+
+  .vil-grid,
+  .vil-stats,
+  .vil-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .vil-topbar h2 {
+    font-size: 22px;
+  }
+
+  .vil-topbar-actions,
+  .vil-footer-actions,
+  .vil-modal-actions,
+  .vil-stock-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
